@@ -1,0 +1,2559 @@
+{
+  "choice": [
+    {
+      "question": "Python 语言属于 ()。",
+      "options": [
+        "机器语言",
+        "汇编语言",
+        "高级语言",
+        "科学计算语言"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M001",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下关于类型语言的描述中，正确的是 ()。",
+      "options": [
+        "静态语言采用解释方式执行，脚本语言采用编译方式执行",
+        "C 语言是静态语言，Python 是脚本语言",
+        "编译是将目标代码抓换成源代码的过程",
+        "解释是将源代码一次性转换成目标代码同时逐条执行目标代码的过程"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M002",
+      "paper_id": "B"
+    },
+    {
+      "question": "表达式 int ('100/3') 的执行结果是 ()。",
+      "options": [
+        "ValueError",
+        "33.3",
+        "33",
+        "100/3"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M003",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列选项中，Python 不支持的数据类型有 ()。",
+      "options": [
+        "int",
+        "char",
+        "float",
+        "list"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M004",
+      "paper_id": "D"
+    },
+    {
+      "question": "以下不是 Python 语言保留字的是 ()。",
+      "options": [
+        "del",
+        "int",
+        "try",
+        "None"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M005",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下关于 Python 程序语法元素的描述，正确的选项是 ()。",
+      "options": [
+        "缩进格式要求程序对齐，增添了编程难度",
+        "Python 变量名允许以数字开头",
+        "true 是 Python 的保留字",
+        "所有的 if、while、def 语句后面都要用 \":\" 冒号结尾"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M006",
+      "paper_id": "B"
+    },
+    {
+      "question": "下面代码的输出结果是 ()。\npython\n运行\nname='Python语言程序设计'\nprint(name[2:-2])",
+      "options": [
+        "thon 语言程序",
+        "thon 语言程序设",
+        "ython 语言程序",
+        "ython 语言程序设"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M007",
+      "paper_id": "C"
+    },
+    {
+      "question": "以下程序的输出结果是 ()。\npython\n运行\ns1=\"企鹅\"\ns2=\"超级游泳健将\"\nprint(\"{0:^3}:{1:!<9}\".format(s1,s2))",
+      "options": [
+        "企鹅:! 超级游泳健将！！",
+        "企鹅：超级游泳健将！！！",
+        "企鹅：超级游泳健将",
+        "企鹅：超级游泳健将！！！"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M008",
+      "paper_id": "D"
+    },
+    {
+      "question": "执行图中的代码，输入 60, 输出的结果是 ()。\npython\n运行\ns = eval(input())\nk='合格'if s >=60 else'不合格'\nprint(s, k)",
+      "options": [
+        "合格",
+        "60 不合格",
+        "60",
+        "60 合格"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M009",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nx, y, z=5, -10, 2\nif x<y:\n    if y<0:\n        z=0\n    else:\n        z +=1\nprint(z)",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M010",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nresult =0\nfor i in range(10):\n    if i%3:\n        break\n    result +=i\nelse:\n    print(result)",
+      "options": [
+        "没有输出",
+        "程序错误",
+        "0",
+        "18"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M011",
+      "paper_id": "C"
+    },
+    {
+      "question": "以下代码执行后，输出的结果是 ()。\npython\n运行\nfor x in range(2,8):\n    y=0\n    y+=x\nprint(y)",
+      "options": [
+        "27",
+        "8",
+        "7",
+        "35"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M012",
+      "paper_id": "D"
+    },
+    {
+      "question": "执行如图的程序，输出的结果是 ()。\npython\n运行\nfor c in 'Python NCRE':\n    if c=='N':\n        break\n    print(c)",
+      "options": [
+        "无输出",
+        "Python",
+        "Pytho",
+        "Python CRE"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M013",
+      "paper_id": "A"
+    },
+    {
+      "question": "下面代码的输出结果是 ()。\npython\n运行\nlistV =list(range(5))\nprint(listV)",
+      "options": [
+        "0 1 2 3 4",
+        "[1, 2, 3, 4, 5]",
+        "[0, 1, 2, 3, 4]",
+        "1 2 3 4 5"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M014",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序，list_two 的值是 ()。\npython\n运行\nlist_one =[4,5,6]\nlist_two =list_one\nlist_one[2]=3",
+      "options": [
+        "[4,5,6]",
+        "[4,3,6]",
+        "[4,5,3]",
+        "都不对"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M015",
+      "paper_id": "C"
+    },
+    {
+      "question": "关于 Python 序列类型的通用操作符和函数，以下选项中描述错误的是 ()。",
+      "options": [
+        "如果 x 不是 s 的元素，x not in s 返回 True",
+        "如果 s 是一个序列，s=[1, \"kate\", True], s [3] 返回 True",
+        "如果 s 是一个序列，s=[1,\"kate\",True], s [-1] 返回 True",
+        "如果 x 是 s 的元素，x in s 返回 True"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M016",
+      "paper_id": "D"
+    },
+    {
+      "question": "以下不是 Python 组合数据类型的是 ()。",
+      "options": [
+        "元组类型",
+        "字符串类型",
+        "数组类型",
+        "列表类型"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M017",
+      "paper_id": "A"
+    },
+    {
+      "question": "关于字典的描述，错误的是 ()。",
+      "options": [
+        "字典的元素以键为索引进行访问",
+        "字典的一个键可以对应多个值",
+        "字典长度是可变的",
+        "字典是键值对的结合，键值对之间没有顺序"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M018",
+      "paper_id": "B"
+    },
+    {
+      "question": "下列哪种说法是错误的 ()。",
+      "options": [
+        "除字典类型外，所有标准对象均可以用于布尔测试",
+        "空字符串的布尔值是 False",
+        "空列表对象的布尔值是 False",
+        "值为 0 的任何数字对象的布尔值是 False"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M019",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列选项中，正确定义了一个字典的是 ()。",
+      "options": [
+        "a = ['a',1,'b',2 'c,3]",
+        "b = ('a',1,'b',2 c,3)",
+        "c={'a',1,'b',2'c',3)",
+        "d ={'a':1,'b':2, 'c':3}"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M020",
+      "paper_id": "D"
+    },
+    {
+      "question": "以下程序的输出结果是 ()。\npython\n运行\nc=set([1,2,3,4,5,6])\nd = set([1,2,3,8,9,0])\nprint(d ^c)",
+      "options": [
+        "(1, 2, 3)",
+        "(4, 5, 6}",
+        "(0, 8, 9)",
+        "(0, 4, 5, 6, 8, 9)"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M021",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下关于组合类型的描述，正确的是 ()。",
+      "options": [
+        "空字典可以用大括号来创建",
+        "可以用 set 创建集合，用中括号和赋值语句增加新元素",
+        "字典数据类型里可以用列表做键",
+        "字典的 items () 函数返回一个键值对，并用元组表述"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M022",
+      "paper_id": "B"
+    },
+    {
+      "question": "调用以下函数返回的值 ()。\npython\n运行\ndef myfun():\n    pass",
+      "options": [
+        "空字符串",
+        "None",
+        "0",
+        "出错不能运行"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M023",
+      "paper_id": "C"
+    },
+    {
+      "question": "以下函数的分类是 ()。\npython\n运行\ndef calculate(number):\n    result = 0\n    i=1\n    while i <=number:\n        result = result +i\n        i+=1\n    return result\nresult = calculate(100)\nprint('1~100的累积和为: ', result)",
+      "options": [
+        "无参无返回值函数",
+        "无参有返回值函数",
+        "有参无返回值函数",
+        "有参有返回值函数"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M024",
+      "paper_id": "D"
+    },
+    {
+      "question": "关于函数的可变参数，可变参数 * args 传入函数时存储的类型是 ()。",
+      "options": [
+        "list",
+        "set",
+        "dict",
+        "tuple"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M025",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\ndef chanageInt(number2):\n    number2 = number2+1\n    print(\"changeInt: number2=\", number2)\n#调用\nnumber1=2\nchanageInt(number1)\nprint(\"number:\", number1)",
+      "options": [
+        "changeInt: number2=3; number: 3",
+        "changeInt: number2= 3; number: 2",
+        "number: 2; changeInt: number2= 2",
+        "number: 2; changeInt: number2= 3"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M026",
+      "paper_id": "B"
+    },
+    {
+      "question": "在一行上写多条 Python 语句使用的符号是 ()。",
+      "options": [
+        "分号",
+        "点号",
+        "冒号",
+        "逗号"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M027",
+      "paper_id": "C"
+    },
+    {
+      "question": "在屏幕上打印输出 Hello World, 使用的 Python 语句是 ()。",
+      "options": [
+        "print(\"Hello World\")",
+        "printin(\"Hello World\")",
+        "print(Hello World)",
+        "printf('Hello World)"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M028",
+      "paper_id": "D"
+    },
+    {
+      "question": "以下选项中，不属于 Python 保留字的是 ()。",
+      "options": [
+        "import",
+        "def",
+        "elif",
+        "type"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M029",
+      "paper_id": "A"
+    },
+    {
+      "question": "表达式 3*4**2//8%7 的计算结果是 ()。",
+      "options": [
+        "3",
+        "6",
+        "4",
+        "5"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M030",
+      "paper_id": "B"
+    },
+    {
+      "question": "以下不是 Python 语言所使用特殊含义符号的是 ()。",
+      "options": [
+        "$",
+        "**",
+        "//",
+        "!="
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M031",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列选项中，Python 不支持的数据类型有 ()。",
+      "options": [
+        "int",
+        "char",
+        "float",
+        "str"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M032",
+      "paper_id": "D"
+    },
+    {
+      "question": "如果 name =' 全国计算机等级考试二级 Python', 以下选项中输出错误的是 ()。",
+      "options": [
+        ">>>print (name [:]) 全国计算机等级考试二级 Python",
+        ">>> print(name[11:]) Python",
+        ">>>print (name [:11]) 全国计算机等级考试二级",
+        ">>> print (name [0], name [8], name [-1]) 全试 n"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M033",
+      "paper_id": "A"
+    },
+    {
+      "question": "下列程序的运行结果是 ()。\npython\n运行\n>>> s = 'PYTHON'\n>>> \"{0:3}\".format(s)",
+      "options": [
+        "'PYTH",
+        "'PYTHON",
+        "PYT",
+        "出错"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M034",
+      "paper_id": "B"
+    },
+    {
+      "question": "以下关于 Python 字符串的描述中，错误的是 ()。",
+      "options": [
+        "字符串是字符的序列，可以按照单个字符访问",
+        "字符串包括两种序号体系：正向递增和反向递减",
+        "Python 字符串提供区间访问方式，采用 [N:M] 格式，表示字符串中从 N 到 M 的索引子字符串 (包含 N 和 M)",
+        "字符串是用一对双引号 \"\" 或者单引号 '' 括起来的零个或者多个字符"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M035",
+      "paper_id": "C"
+    },
+    {
+      "question": "以下选项中值为 False 的是 ()。",
+      "options": [
+        ">>> 8 is not 20",
+        ">>> False !=0",
+        ">>>2!=4",
+        ">>> 8 is 8"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M036",
+      "paper_id": "D"
+    },
+    {
+      "question": "表达式 3<5>0 的值是 ()。",
+      "options": [
+        "0",
+        "1",
+        "True",
+        "False"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M037",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，执行结果是 ()。\npython\n运行\nfor s in \"thisisabook\":\n    if s==\"i\" or s==\"o\":\n        continue\n    print(s, end=\"\")",
+      "options": [
+        "thsisabok",
+        "thssabk",
+        "thssabook",
+        "thisisabk"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M038",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序中，语句 print (i+j) 共执行了 () 次。\npython\n运行\ncount =0\nfor i in range(6):\n    for j in range(2, 10, 2):\n        print(i+j)\n        count +=1",
+      "options": [
+        "30",
+        "20",
+        "24",
+        "28"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M039",
+      "paper_id": "C"
+    },
+    {
+      "question": "图 5-03 执行如图的程序，输入 \"dog123\"(不含引号), 则输出结果是 ()\npython\n运行\nw =input()\nfor x in w:\n    if'0'<=x<='9':\n        continue\n    else:\n        w = w.replace(x, \"\")\nprint(w)",
+      "options": [
+        "dog",
+        "dog123",
+        "123",
+        "123dog"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M040",
+      "paper_id": "D"
+    },
+    {
+      "question": "在 Python 中执行如图程序后，s 值为 ()。\npython\n运行\ns = ['a', 'b']\ns.append([1, 2])\ns.insert(1, 7)",
+      "options": [
+        "['a', 7, 'b', 1, 2]",
+        "[[1, 2], 7, 'a', 'b']",
+        "[1, 2, 'a', 7, 'b']",
+        "['a', 7, 'b',[1, 2]]"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M041",
+      "paper_id": "A"
+    },
+    {
+      "question": "下列函数中，用于返回列表中元素最小值的是 ()。",
+      "options": [
+        "len()",
+        "max()",
+        "min()",
+        "tuple()"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M042",
+      "paper_id": "B"
+    },
+    {
+      "question": "Python 内置函数 () 可以返回列表、元组、字典、集合、字符串以及 range 对象中元素个数。",
+      "options": [
+        "type()",
+        "index()",
+        "len()",
+        "count()"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M043",
+      "paper_id": "C"
+    },
+    {
+      "question": "已知 x=(3,), 那么表达式 x*4 的值为 ()。",
+      "options": [
+        "(3, 3, 3, 3)",
+        "12",
+        "提示错误",
+        "81"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M044",
+      "paper_id": "D"
+    },
+    {
+      "question": "如图的语句，执行结果是 ()。\npython\n运行\ndd ={1:90, 2:87, 3:93}\nprint(max(dd), min(dd))",
+      "options": [
+        "3 2",
+        "93 87",
+        "93 90",
+        "3 1"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M045",
+      "paper_id": "A"
+    },
+    {
+      "question": "表达式 max ({2:10, 8:4, 5:99}) 的结果是 ()。",
+      "options": [
+        "10",
+        "99",
+        "8",
+        "0.277083333"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M046",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\ndict1 = {'a': 1,'b':2, 'b':3}\ntemp = dict1['b']\nprint(temp)",
+      "options": [
+        "'b':2}",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M047",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列说法中正确的是 ()。",
+      "options": [
+        "set () 可将任何类型转换为集合类型",
+        "remove () 会删除集合中的元素，不论元素是否存在都不报错",
+        "集合中的元素不可重复，元素类型只能是不可变数据类型",
+        "集合元素是有序的"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M048",
+      "paper_id": "D"
+    },
+    {
+      "question": "以下程序的输出结果是 ()。\npython\n运行\nc =set([1,2,3,4,5,6])\nd = set([1,2,3,8,9,0])\nprint(d & c)",
+      "options": [
+        "(1, 2, 3)",
+        "(4, 5, 6}",
+        "(0, 8, 9)",
+        "(0, 1, 2, 3, 4, 5, 6, 8, 9)"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M049",
+      "paper_id": "A"
+    },
+    {
+      "question": "使用 () 关键字创建自定义函数。",
+      "options": [
+        "function",
+        "func",
+        "def",
+        "procedure"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M050",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序，运行结果是 ()。\npython\n运行\ndef greeting(args1, *args):\n    print(args)\ngreeting('HTY','LFF','ZH','Hello')",
+      "options": [
+        "['LFF', 'ZH', 'Hello']",
+        "('ZH', 'Hello')",
+        "出错",
+        "'LFF','ZH', 'Hello '"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M051",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的代码，其输出结果是 ()。\npython\n运行\ndef calu(x=3, y=2):\n    return x*y\na ='abc'\nb=2\nprint(calu(a, b), end=', ')",
+      "options": [
+        "abcabc,6",
+        "abcabc",
+        "6,",
+        "abcabc,"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M052",
+      "paper_id": "D"
+    },
+    {
+      "question": "在 Python 3.x 中 print ([1,2,3]) 语句的执行结果是 ()。",
+      "options": [
+        "错误",
+        "[1,2,3]",
+        "1 2 3",
+        "*[1,2,3]"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M053",
+      "paper_id": "A"
+    },
+    {
+      "question": "表达式 sorted (['123','121', '231'], key=lambda x:x [2]) 的值为 ()。",
+      "options": [
+        "['12', '12', '23']",
+        "['121','231', '123']",
+        "['231', '121', '123']",
+        "['123', '121', '231']"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M054",
+      "paper_id": "B"
+    },
+    {
+      "question": "以下关于 Python 的说法，错误的是 ()。",
+      "options": [
+        "拥有庞大的计算生态",
+        "有很多专业库供调用",
+        "有严格的缩进规则",
+        "代码不区分大小写"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M055",
+      "paper_id": "C"
+    },
+    {
+      "question": "在 Python 语言中，可以作为源文件后缀名的是 ()。",
+      "options": [
+        "pyc",
+        "py",
+        "python",
+        "pdf"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M056",
+      "paper_id": "D"
+    },
+    {
+      "question": "表达式 5//2 的结果是 ()。",
+      "options": [
+        "2",
+        "2.0",
+        "2.55",
+        "2.6"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M057",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下不属于 Python 语言保留字的是 ()。",
+      "options": [
+        "do",
+        "while",
+        "True",
+        "pass"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M058",
+      "paper_id": "B"
+    },
+    {
+      "question": "下列语句中，() 在 Python 中是非法的。",
+      "options": [
+        "x=y=z=1",
+        "x=(y=z+1)",
+        "x,y=y,x",
+        "x+=y"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M059",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列数据中，不属于字符串的是 ()。",
+      "options": [
+        "'ab'",
+        "'perface'",
+        "\"52wo\"",
+        "abc"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M060",
+      "paper_id": "D"
+    },
+    {
+      "question": "下列方法中，能够返回某个子串在字符串中出现次数的是 ()。",
+      "options": [
+        "length",
+        "index",
+        "count",
+        "find"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M061",
+      "paper_id": "A"
+    },
+    {
+      "question": "下面代码的输出结果是 ()。\npython\n运行\ns = \"The python language is a cross platform language.\"\nprint(s.find('language', 30))",
+      "options": [
+        "10",
+        "40",
+        "系统报错",
+        "30"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M062",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nresult, x, y, ok1, ok2 =50, 40, 20, 10, 30\nif x<y:\n    if y!=10:\n        if not ok1:\n            result =1\n        elif ok2:\n            result = -1\n    else:\n        result =0\nprint(result)",
+      "options": [
+        "1",
+        "0",
+        "-1",
+        "50"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M063",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列关于分支结构的描述错误的是 ()。",
+      "options": [
+        "分支结构包括单分支结构、二分支结构和多分支结构",
+        "单分支结构的书写形式包括 (if-else)",
+        "多分支结构通常适用于判断一类条件或同一个条件的多个执行路径",
+        "使用多分支结构时需要注意多个逻辑条件的先后顺序，避免逻辑上的错误"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M064",
+      "paper_id": "D"
+    },
+    {
+      "question": "下列选项中，会输出 1,2,3,4,5 五个数字的是 ()。",
+      "options": [
+        "for i in range(5):print(i)",
+        "i =1; while i <5:print(i);i=i+1",
+        "for i in range(4):print(i+1)",
+        "i=0; while i <5:print(i);i=i+1"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M065",
+      "paper_id": "A"
+    },
+    {
+      "question": "如图的代码，执行后输出的结果是 ()。\npython\n运行\nfor i in 'NJITcnNice!':\n    if i=='i':\n        break\n    print(i, end='')",
+      "options": [
+        "NJITcn",
+        "NJITcnN",
+        "NJITcnNi",
+        "NJITcnNice"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M066",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的代码，输出的结果是 ()。\npython\n运行\ns=0\nfor i in range(1,101):\n    if i%2==0:\n        s +=i\n    else:\n        s-=i\nprint(s)",
+      "options": [
+        "-50",
+        "2550",
+        "50",
+        "2500"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M067",
+      "paper_id": "C"
+    },
+    {
+      "question": "语句 for i in range (3):print (i, end=' ') 的输出结果为 ()。",
+      "options": [
+        "0,1,2,3,",
+        "0,1,2",
+        "0 1 2",
+        "0 1 2 3"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M068",
+      "paper_id": "D"
+    },
+    {
+      "question": "执行程序的输出结果是 ()。\npython\n运行\nx = ['90', '87', '90']\nn =90\nprint(x.count(n))",
+      "options": [
+        "None",
+        "0",
+        "1",
+        "2"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M069",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\ns = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]\nprint(s[4:])",
+      "options": [
+        "['purple']",
+        "['seashell', 'gold', 'pink', 'brown']",
+        "['gold', 'pink', 'brown','purple', 'tomato']",
+        "['purple', 'tomato']"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M070",
+      "paper_id": "B"
+    },
+    {
+      "question": "下列操作会正常输出结果的是 ()。",
+      "options": [
+        "list[-4:-1:-1]",
+        "list[:3:2]",
+        "list[1:3:0]",
+        "list['a':'d':2]"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M071",
+      "paper_id": "C"
+    },
+    {
+      "question": "对于列表 ls 的操作，以下选项中描述错误的是 ()。",
+      "options": [
+        "ls.clear (): 删除 ls 的最后一个元素",
+        "ls.copy (): 生成一个新列表，复制 ls 的所有元素",
+        "ls.reverse (): 列表 ls 的所有元素反转",
+        "ls.append (x): 在 ls 最后增加一个元素"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M072",
+      "paper_id": "D"
+    },
+    {
+      "question": "Python 语句 print (type ([1,2], [3,4])) 的结果是 ()。",
+      "options": [
+        "<class 'tuple'>",
+        "<class 'dict'>",
+        "<class 'set'>",
+        "<class 'list'>"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M073",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出的结果是 ()。\npython\n运行\ntest = {\"age\":18, \"score\":[89, 95],\"name\":\"Hawking\"}\nprint(test[\"score\"], test.get(\"name\", \"rose\"))",
+      "options": [
+        "89,95 Hawking",
+        "[89, 95] Hawking",
+        "[89, 95] Rose",
+        "[89, 95] name"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M074",
+      "paper_id": "B"
+    },
+    {
+      "question": "字典的 () 方法返回字典的 \"键\" 列表。",
+      "options": [
+        "keys()",
+        "key()",
+        "values()",
+        "items()"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M075",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，以下选项中描述正确的是 ()。\npython\n运行\nMonthandFlower={\"1月\":\"梅花\",\"2月\":\"杏花\",\"3月\":\"桃花\",...}\nn = input(\"请输入月份(1-12):\")\nprint(MonthandFlower.get(n))",
+      "options": [
+        "代码实现了获取一个整数 (1-12) 来表示月份，输出该月份对应的代表花名",
+        "MonthandFlower 是列表类型变量",
+        "MonthandFlower 是一个元组",
+        "MonthandFlower 是集合类型变量"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M076",
+      "paper_id": "D"
+    },
+    {
+      "question": "关于 Python 组合数据类型，以下选项中描述错误的是 ()。",
+      "options": [
+        "组合数据类型可以分为 3 类：序列类型、集合类型和映射类型",
+        "序列类型是二维元素向量，元素之间存在先后关系，通过序号访问",
+        "Python 的 str、tuple 和 list 类型都属于序列类型",
+        "Python 组合数据类型能够将多个同类型或不同类型的数据组织起来，通过单一的表示使数据操作更有序、更容易"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M077",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下 () 会得到 (1,2,3,4)。",
+      "options": [
+        "list('1234')",
+        "set('1234')",
+        "tuple('1234')",
+        "其它选项都不对"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M078",
+      "paper_id": "B"
+    },
+    {
+      "question": "关于函数的目的与意义，以下选项中描述错误的是 ()。",
+      "options": [
+        "程序功能抽象，以支持代码重用",
+        "使用时无须了解函数内部实现细节",
+        "函数能调用未实现的函数",
+        "有助于采用分而治之的策略编写大型复杂程序"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M079",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，输出的结果是 ()。\npython\n运行\nz=10\ndef demo(b=2, a=4):\n    global z\n    z += 3*a+5*b\n    return z\nprint(z, demo(4, 2))",
+      "options": [
+        "36 36",
+        "32 32",
+        "10 36",
+        "10 32"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M080",
+      "paper_id": "D"
+    },
+    {
+      "question": "关于函数，以下选项中描述错误的是 ()。",
+      "options": [
+        "函数在需要时被调用，其代码被执行",
+        "函数是具有特定功能的可重用代码片段，实现解决某个特定问题的算法",
+        "函数使用时需要了解函数内部实现细节",
+        "函数主要通过接口 (interface) 与外界通信，传递信息"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M081",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行图中的代码，可能的输出结果是 ()。\npython\n运行\nimport random\ndef test():\n    x= random.randint(0, 10)\n    y = random.randint(10, 20)\n    return ([x, y])\nprint(test())",
+      "options": [
+        "(6, 20)",
+        "[6, 20]",
+        "[11, 13]",
+        "(11, 13)"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M082",
+      "paper_id": "B"
+    },
+    {
+      "question": "已知 x=[[1,3,3], [2,2,1] ], 那么表达式 sorted (x, key=lambda item:item [1]) 的值为 ()。",
+      "options": [
+        "[[2, 2, 1], [1, 3, 3]]",
+        "[[1, 3], [2, 1]]",
+        "[[1, 3, 3], [1, 2, 3]]",
+        "错误"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M083",
+      "paper_id": "C"
+    },
+    {
+      "question": "以下选项中，不是建立字典的方式是 ()。",
+      "options": [
+        "d ={[1,2]:1, [3,4]:3}",
+        "d ={(1,2):1, (3,4):3}",
+        "d ={' 张三 ':1, ' 李四 ':2}",
+        "d ={1:[1,2], 3:[3,4]}"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M084",
+      "paper_id": "D"
+    },
+    {
+      "question": "Python 语句 print (type (())) 的输出结果是 ()。",
+      "options": [
+        "<class 'set'>",
+        "<class 'dict'>",
+        "<class 'list'>",
+        "<class 'tuple'>"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M085",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下程序的输出结果是 ()。\npython\n运行\nc=set([1,2,3,4,5,6])\nd = set([1,2,3,8,9,0])\nprint(d -c)",
+      "options": [
+        "(1, 2, 3)",
+        "(4, 5, 6}",
+        "(0, 8, 9)",
+        "(0, 4, 5, 6, 8, 9)"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M086",
+      "paper_id": "B"
+    },
+    {
+      "question": "图中的代码，执行的结果是 ()。\npython\n运行\nimport random\nsp =100\ndef test(x=2.0, y=4.0):\n    global sp\n    sp += x*y\n    return sp\nprint(sp, test(4, 3))",
+      "options": [
+        "112 112",
+        "100 100",
+        "112 100",
+        "100 112"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M087",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，以下选项中描述正确的是 ()。\npython\n运行\ndef fact(n, m=1):\n    s=1\n    for i in range(1, n+1):\n        s *=i\n    return s//m\nprint(fact(m=5, n=10))",
+      "options": [
+        "参数按照名称传递",
+        "执行结果为 10886400",
+        "按可变参数调用",
+        "按位置参数调用"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M088",
+      "paper_id": "D"
+    },
+    {
+      "question": "执行如图的程序，运行结果是 ()。\npython\n运行\nls =[\"F\",\"f\"]\ndef fun(a):\n    ls.append(a)\n    return ls\nprint(fun(\"C\"))",
+      "options": [
+        "['F', 'f', 'C']",
+        "['C']",
+        "出错",
+        "['F', 'f']"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M089",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的代码，输出的结果是 ()。\npython\n运行\nf = lambda x,y:x if x<y else y\na = f('aa', 'bb')\nb =f('bb','aa')\nprint(a, b)",
+      "options": [
+        "aa aa",
+        "aa bb",
+        "bb aa",
+        "bb bb"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M090",
+      "paper_id": "B"
+    },
+    {
+      "question": "计算机中信息处理和信息储存用 ()。",
+      "options": [
+        "十进制代码",
+        "二进制代码",
+        "十六进制代码",
+        "ASCII 代码"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M091",
+      "paper_id": "C"
+    },
+    {
+      "question": "Python 源程序执行的方式 ()。",
+      "options": [
+        "编译执行",
+        "解释执行",
+        "直接执行",
+        "边编译边执行"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M092",
+      "paper_id": "D"
+    },
+    {
+      "question": "关于赋值语句，以下选项中描述错误的是 ()。",
+      "options": [
+        "在 Python 语言中，\"=\" 表示赋值，即将 \"=\" 右侧的计算结果赋值给左侧变量，包含 \"=\" 的语句称为赋值语句",
+        "a,b,c= b,c,a 是不合法的",
+        "a, b = b,a 可以实现 a 和 b 值的互换",
+        "赋值与二元操作符可以组合，例如:&="
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M093",
+      "paper_id": "A"
+    },
+    {
+      "question": "假设 a=9, b=2, 那么下列运算中，错误的是 ()。",
+      "options": [
+        "a+b 的值是 11",
+        "a//b 的值是 4",
+        "a% b 的值是 1",
+        "a**b 的值是 18"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M094",
+      "paper_id": "B"
+    },
+    {
+      "question": "以下不是 Python 语言保留字的是 ()。",
+      "options": [
+        "and",
+        "True",
+        "do",
+        "lambda"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M095",
+      "paper_id": "C"
+    },
+    {
+      "question": "下列选项中，() 的布尔值不是 False。",
+      "options": [
+        "None",
+        "0",
+        "''",
+        "1"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M096",
+      "paper_id": "D"
+    },
+    {
+      "question": "给出如下代码: tempstr =\"Hello World\", 以下选项中可以输出 \"World\" 子串的是 ()。",
+      "options": [
+        "print(tempstr[-5:-1])",
+        "print(tempstr[-5:0])",
+        "print(tempstr[-4:-1])",
+        "print(tempstr[-5:])"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M097",
+      "paper_id": "A"
+    },
+    {
+      "question": "下列方法中，能够让所有单词的首字母变成大写的方法是 ()。",
+      "options": [
+        "capitalize()",
+        "title()",
+        "upper()",
+        "ljust(0)"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M098",
+      "paper_id": "B"
+    },
+    {
+      "question": "表达式 0 or 5 值是 ()。",
+      "options": [
+        "0",
+        "5",
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M099",
+      "paper_id": "C"
+    },
+    {
+      "question": "当 a, b, c, d =1, 3, 5, 4 时，执行如图的程序后 x 的值为 ()。\npython\n运行\nif a<b:\n    if c<<d:\n        x=1\n    elif a<c:\n        if b<<d:\n            x=2\n        else:\n            x=3\n    else:\n        x=6\nelse:\n    x=7",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M100",
+      "paper_id": "D"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nfor x in range(4):\n    print('*', end=':')",
+      "options": [
+        "::*:",
+        "::::",
+        "****:",
+        "****:"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M101",
+      "paper_id": "A"
+    },
+    {
+      "question": "以下输入，不能使如图的代码执行结束的是 ()。\npython\n运行\nwhile True:\n    inp =eval(input(\"请输入一个数值:\"))\n    if inp //3:\n        break",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M102",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的程序，输出的结果是 ()。\npython\n运行\nfor i in \"Nation\":\n    for k in range(2):\n        if i=='n':\n            break\n        print(i, end=\"\")",
+      "options": [
+        "aattiioo",
+        "NNaattiioo",
+        "Naattiioon",
+        "aattiioonn"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M103",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，以下选项中有输出的是 ()。\npython\n运行\nimport random as ran\nlistV=[]\nran.seed(100)\nfor i in range(10):\n    i = ran.randint (100,999)\n    listV.append(i)",
+      "options": [
+        "print(max(listV))",
+        "print(listV.max())",
+        "print(listV.pop(i))",
+        "print(listV.reverse(i))"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M104",
+      "paper_id": "D"
+    },
+    {
+      "question": "对于列表 ls =[1,2,3,4,5,6,7,8,9,10], 得不到结果 [1,3,5,7,9] 的是 ()。",
+      "options": [
+        "ls[::2]",
+        "ls[:-1:2]",
+        "ls[1:11:2]",
+        "ls[0::2]"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M105",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出的结果是 ()。\npython\n运行\nls=['绿茶','乌龙茶','红茶','白茶','黑茶']\nx='乌龙茶'\nprint(ls.index(x, 0))",
+      "options": [
+        "-3",
+        "0",
+        "1",
+        "-4"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M106",
+      "paper_id": "B"
+    },
+    {
+      "question": "Python 语句 print (type ([1, 2, 3, 4])) 的输出结果是 ()。",
+      "options": [
+        "<class 'tuple'>",
+        "<class 'dict'>",
+        "<class 'set'>",
+        "<class 'list'>"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M107",
+      "paper_id": "C"
+    },
+    {
+      "question": "己知 x=(10, 20, 30, 40, 50), 那么表达式 x [5:] 值为 ()。",
+      "options": [
+        "()",
+        "0",
+        "50",
+        "错误"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M108",
+      "paper_id": "D"
+    },
+    {
+      "question": "字典对象的 () 方法返回字典中的所有 \"键 - 值对\"。",
+      "options": [
+        "keys()",
+        "values()",
+        "items()",
+        "item()"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M109",
+      "paper_id": "A"
+    },
+    {
+      "question": "表达式 {1:'a', 2:'b',3:'c'}.get (4, 'd') 的值为 ()。",
+      "options": [
+        "错误",
+        "'d'",
+        "None",
+        "'c'"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M110",
+      "paper_id": "B"
+    },
+    {
+      "question": "以下选项中不属于组合数据类型的是 ()。",
+      "options": [
+        "变体类型",
+        "字典类型",
+        "映射类型",
+        "序列类型"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M111",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，输出的结果不可能是 ()。\npython\n运行\nss = set('htslbht')\nfor i in ss:\n    print(i, end='')",
+      "options": [
+        "bhtls",
+        "bhlts",
+        "tsblth",
+        "thsbl"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M112",
+      "paper_id": "D"
+    },
+    {
+      "question": "下列有关函数的说法中，正确的是 ()。",
+      "options": [
+        "函数的定义必须在程序的开头",
+        "函数定义后，其中的程序就可以自动执行",
+        "函数定义后需要调用才会执行",
+        "函数体与关键字 def 必须左对齐"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M113",
+      "paper_id": "A"
+    },
+    {
+      "question": "函数如图所示：下面 () 在调用函数时会报错。\npython\n运行\ndef showNnumber(numbers):\n    for n in numbers:\n        print(n)",
+      "options": [
+        "showNnumber([1,2,3,5])",
+        "showNnumber('3.1415926')",
+        "showNnumber(3.1415926)",
+        "showNnumber(1,2,3,4)"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M114",
+      "paper_id": "B"
+    },
+    {
+      "question": "以下代码中的 print_menu () 函数是 () 分类。\npython\n运行\ndef print_menu():\n    print('-----')\n    print('xx涮涮锅 点菜系统')\n    print('1. 羊肉涮涮锅')\n    print('2.牛肉涮涮锅')\n    print('3. 猪肉涮涮锅')\n    print('-----')\nprint_menu()",
+      "options": [
+        "无参无返回值函数",
+        "无参有返回值函数",
+        "有参无返回值函数",
+        "有参有返回值函数"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M115",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的代码，输出的结果是 ()。\npython\n运行\nf = lambda a=\"hello^\", b=\"python^\", c=\"world\": a+b.split(\"o^\")[1]+c\nprint(f(\"hi\"))",
+      "options": [
+        "ballegythomworld",
+        "hipythonworld",
+        "helloworld",
+        "hinworld"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M116",
+      "paper_id": "D"
+    },
+    {
+      "question": "己知 x=(1, 2, 3), 那么表达式 sum (x) 的值为 ()。",
+      "options": [
+        "6",
+        "错误",
+        "12",
+        "9"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M117",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nd = {\"大海\":\"蓝色\", \"天空\":\"灰色\",\"大地\":\"黑色\"}\nprint(d[\"大地\"], d.get(\"大地\",\"黄色\"))",
+      "options": [
+        "黑色 黄色",
+        "黑色 黑色",
+        "黑的 灰色",
+        "黑色 蓝色"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M118",
+      "paper_id": "B"
+    },
+    {
+      "question": "已知 x=tuple (range (10)), 则表达式 x [-4:] 的值为 ()。",
+      "options": [
+        "(9, 8, 7, 6)",
+        "(5, 6, 7, 8, 9)",
+        "错误",
+        "(6, 7, 8, 9)"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M119",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\na = [5, 1, 3, 4]\nprint(sorted(a, reverse = True))",
+      "options": [
+        "[5, 4, 3, 1]",
+        "[4, 3, 1,5]",
+        "[1, 3, 4, 5]",
+        "[5, 1, 3, 4]"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M120",
+      "paper_id": "D"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nls = [3.5,\"Python\", [10, \"LIST\"], 3.6]\nprint(ls[2][-1][1])",
+      "options": [
+        "I",
+        "P",
+        "L",
+        "A"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M121",
+      "paper_id": "A"
+    },
+    {
+      "question": "对于列表 (序列) s, 下列选项对 min (s) 描述正确的是 ()。",
+      "options": [
+        "一定可以返回 s 中的最小元素，如果存在多个相同的最小元素，则返回一个列表类型",
+        "一定能够返回 s 中的最小元素",
+        "一定可以返回 s 中的最小元素，如果存在多个相同的最小元素，则返回一个元组类型",
+        "可以返回 s 中的最小元素，但要求 s 中元素可比较"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M122",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的代码，输出的结果是 ()。\npython\n运行\nfor i in range(8):\n    if i%2!=1:\n        continue\n    else:\n        print(i, end=\",\")",
+      "options": [
+        "0,",
+        "1,",
+        "1,3,5,7,",
+        "0,2,4,6,"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M123",
+      "paper_id": "C"
+    },
+    {
+      "question": "代码如图所示，执行后输出的结果是 ()。\npython\n运行\nfor i in \"NJIT\":\n    for j in range(2):\n        print(i,end='')\n        if i=='I':\n            break",
+      "options": [
+        "NNJ",
+        "NNJJTT",
+        "NNJJITT",
+        "NNJI"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M124",
+      "paper_id": "D"
+    },
+    {
+      "question": "下列说法中 () 是错误的。",
+      "options": [
+        "while 语句的循环体中可以包括 if 语句",
+        "if 语句中可以包括循环语句",
+        "循环语句不可以嵌套",
+        "选择语句可以嵌套"
+      ],
+      "answer": "C",
+      "type": "choice",
+      "id": "M125",
+      "paper_id": "A"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nx, y, z =5, -10, 2\nif x>y:\n    if y<0:\n        z=0\n    else:\n        z +=1\nprint(z)",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M126",
+      "paper_id": "B"
+    },
+    {
+      "question": "执行如图的代码，用键盘输入数字 5, 输出的结果是 ()。\npython\n运行\nn =eval(input(\"请输入一个整数:\"))\ns=0\nif n>=5:\n    n-=1\n    s=4\nif n<5:\n    n-=1\n    s=3\nprint(s)",
+      "options": [
+        "4",
+        "3",
+        "0",
+        "2"
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M127",
+      "paper_id": "C"
+    },
+    {
+      "question": "执行如图的程序，输出结果是 ()。\npython\n运行\nprint('{:*<10.4}'.format('Flower'))",
+      "options": [
+        "Flow",
+        "Flow",
+        "Flower",
+        "Flow******"
+      ],
+      "answer": "D",
+      "type": "choice",
+      "id": "M128",
+      "paper_id": "D"
+    },
+    {
+      "question": "给出如下代码:\npython\n运行\n>>>x=3.14\n>>> eval('x +10')\n上述代码的输出结果是 ()。",
+      "options": [
+        "TypeError: must be str, not int",
+        "13.14",
+        "3.141",
+        "\"13.14\""
+      ],
+      "answer": "B",
+      "type": "choice",
+      "id": "M129",
+      "paper_id": "A"
+    },
+    {
+      "question": "下面代码的输出结果是 ()。\npython\n运行\n>>> a, b, c, d, e, f= 'Python'\n>>>b",
+      "options": [
+        "'y'",
+        "1",
+        "0",
+        "出错"
+      ],
+      "answer": "A",
+      "type": "choice",
+      "id": "M130",
+      "paper_id": "B"
+    }
+  ],
+  "fill_in": [
+    {
+      "id": "1",
+      "question": "表达式`round(3.7)`的值为____。",
+      "answer": "4",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "2",
+      "question": "在Python中____表示空类型。",
+      "answer": "NoneType",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "3",
+      "question": "表达式`3 in [1,2.3,4]`的值为____。",
+      "answer": "False",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "4",
+      "question": "表达式`3 and 5`的值为____。",
+      "answer": "5",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "5",
+      "question": "列表、元组、字符串是Python的____（填有序或无序）序列。",
+      "answer": "有序",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "6",
+      "question": "已知`vec=[1,2,3]`，则表达式`[row for row in vec]`的值为____。",
+      "answer": "[1, 2, 3]",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "7",
+      "question": "已知`x=[3,7,5]`，那么执行语句`x = x.sort(reverse=True)`之后，x的值为____。",
+      "answer": "None",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "8",
+      "question": "字典对象的____方法可以获取指定“键”对应的“值”，并且可以在指定“键”不存在的时候返回指定值，如果不指定则返回None。",
+      "answer": "get",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "9",
+      "question": "已知`x={1:2,2:3,3:4}`，那么表达式`sum(x.values())`的值为____。",
+      "answer": "9",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "10",
+      "question": "已知`g=lambda x,y=3,z=5:x*y*z`，则语句`print(g(1))`的输出结果为____。",
+      "answer": "15",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "11",
+      "question": "查看变量内存地址的Python内置函数是____。",
+      "answer": "id",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "12",
+      "question": "执行语句`x,y,z='123'`之后，y的值为____。",
+      "answer": "'2'",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "13",
+      "question": "表达式`2**3**2`的值为____。",
+      "answer": "512",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "14",
+      "question": "表达式`range(10,20)[4]`的值为____。",
+      "answer": "14",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "15",
+      "question": "表达式`[1,2] + [3]`的值为____。",
+      "answer": "[1, 2, 3]",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "16",
+      "question": "已知列表`x=[1,2]`，那么执行语句`x.extend([3])`之后，x的值为____。",
+      "answer": "[1, 2, 3]",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "17",
+      "question": "已知`x=[3,7,5]`，那么执行语句`x.sort(reverse=True)`之后，x的值为____。",
+      "answer": "[7, 5, 3]",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "18",
+      "question": "已知`x={1:2,2:3}`，那么表达式`x.get(3,4)`的值为____。",
+      "answer": "4",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "19",
+      "question": "已知`x={'a':'b','c':'d'}`，那么表达式`'b' in x.values()`的值为____。",
+      "answer": "True",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "20",
+      "question": "表达式`sorted([13,1,237,89,100],key=lambda x:len(str(x)))`的值为____。",
+      "answer": "[1, 13, 89, 100, 237]",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "21",
+      "question": "表达式`1234%1000//100`的值为____。",
+      "answer": "2",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "22",
+      "question": "表达式`'a'.join('abc'.partition('a'))`的值为____。",
+      "answer": "aaabc",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "23",
+      "question": "关键字____用于测试一个对象是否是一个可迭代对象的元素。",
+      "answer": "in",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "24",
+      "question": "在循环语句中，____语句的作用是提前结束本层循环。",
+      "answer": "break",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "25",
+      "question": "表达式`len([i+5 for i in range(10)])`的值为____。",
+      "answer": "10",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "26",
+      "question": "已知`x=[1,2,3,2,3]`，执行语句`x.pop()`之后，x的值为____。",
+      "answer": "[1, 2, 3, 2]",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "27",
+      "question": "已知`x=(3,)`，那么表达式`x*3`的值为____。",
+      "answer": "(3, 3, 3)",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "28",
+      "question": "表达式`{1,2,3} & {2,3,4}`的值为____。",
+      "answer": "{2, 3}",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "29",
+      "question": "表达式`{1,2,3} == {1,3,2}`的值为____。",
+      "answer": "True",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "30",
+      "question": "表达式`sorted([111,2,33],key=lambda x:-len(str(x)))`的值为____。",
+      "answer": "[111, 33, 2]",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "31",
+      "question": "Python内置函数____可以返回列表、元组、字典、集合、字符串以及range对象中元素个数。",
+      "answer": "len",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "32",
+      "question": "表达式`'abcdefg'.split('d')`的值为____。",
+      "answer": "['abc', 'efg']",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "33",
+      "question": "表达式`True*3`的值为____。",
+      "answer": "3",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "34",
+      "question": "表达式`not 3`的值为____。",
+      "answer": "False",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "35",
+      "question": "表达式`[1,2]*2`的值为____。",
+      "answer": "[1, 2, 1, 2]",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "36",
+      "question": "表达式`[1,2,3] == [1,3,2]`的值为____。",
+      "answer": "False",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "37",
+      "question": "已知列表`x=list(range(5))`，那么执行语句`x.remove(3)`之后表达式`x.index(4)`的值为____。",
+      "answer": "3",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "38",
+      "question": "表达式`set([1,2,3]) == {1,2,3}`的值为____。",
+      "answer": "True",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "39",
+      "question": "使用运算符测试集合A是否为集合B的真子集的表达式可以写作____。",
+      "answer": "A < B",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "40",
+      "question": "Python中定义函数的关键字是____。",
+      "answer": "def",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "41",
+      "question": "表达式`sum([1,2,3])`的值为____。",
+      "answer": "6",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "42",
+      "question": "表达式`eval(\"[1,2,3]\")`的值为____。",
+      "answer": "[1, 2, 3]",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "43",
+      "question": "表达式`5 if 5>6 else (6 if 3>2 else 5)`的值为____。",
+      "answer": "6",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "44",
+      "question": "表达式`1<2<3`的值为____。",
+      "answer": "True",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "45",
+      "question": "已知列表`x=[1,2,3,4]`，那么执行语句`del x[1]`之后x的值为____。",
+      "answer": "[1, 3, 4]",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "46",
+      "question": "已知`x=[3,5,3,7]`，那么表达式`[x.index(i) for i in x if i==3]`的值为____。",
+      "answer": "[0, 0]",
+      "type": "fill_in",
+      "paper_id": "B"
+    },
+    {
+      "id": "47",
+      "question": "表达式`[5 for i in range(3)]`的值为____。",
+      "answer": "[5, 5, 5]",
+      "type": "fill_in",
+      "paper_id": "C"
+    },
+    {
+      "id": "48",
+      "question": "已知`x={1:2,2:3,3:4}`，那么表达式`sum(x)`的值为____。",
+      "answer": "6",
+      "type": "fill_in",
+      "paper_id": "D"
+    },
+    {
+      "id": "49",
+      "question": "字典对象的____方法返回字典中的所有“键-值对”。",
+      "answer": "items",
+      "type": "fill_in",
+      "paper_id": "A"
+    },
+    {
+      "id": "50",
+      "question": "如果函数中没有`return`语句或者`return`语句不带任何返回值，那么该函数的返回值为____。",
+      "answer": "None",
+      "type": "fill_in",
+      "paper_id": "B"
+    }
+  ],
+  "true_false": [
+    {
+      "id": "1",
+      "question": "Python使用缩进来体现代码之间的逻辑关系。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "2",
+      "question": "执行语句`from math import sin`之后，可以直接使用`sin`函数，例如`sin(3)`。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "3",
+      "question": "Python不允许使用关键字作为变量名，允许使用内置函数名作为变量名，但这会改变函数名的含义。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "4",
+      "question": "已知x为非空字符串，那么表达式`\"\".join(x.split(',')) == x`的值一定为True。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "5",
+      "question": "当列表作为条件表达式时，空列表等价于False，包含任何内容的列表等价于True，所以表达式`[3,5,8] == True`的结果是True。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "6",
+      "question": "在循环中`break`语句的作用是结束该语句所在的循环。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "7",
+      "question": "`pass`语句的出现是为了保持程序结构的完整性。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "8",
+      "question": "假设已导入`random`标准库，那么表达式`max([random.randint(1,10) for i in range(10)])`的值一定是10。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "9",
+      "question": "对于数字n，如果表达式`0 not in [n%d for d in range(2,n)]`的值为True，则说明n是素数。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "10",
+      "question": "在Python中元组的值是不可变的，因此已知`x=([1],[2])`，那么语句`x[0].append(3)`是无法正常执行的。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "11",
+      "question": "字典不能用`sorted()`函数排序。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "12",
+      "question": "表达式`{1,2}*2`的值为`{1,2,1,2}`。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "13",
+      "question": "字典可以作为集合的元素。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "14",
+      "question": "带有默认值的参数位于参数列表的末尾。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "15",
+      "question": "在`lambda`表达式中，不允许包含选择结构和循环结构，也不能在`lambda`表达式中调用其他函数。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "16",
+      "question": "Python3.x完全兼容Python2.x。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "17",
+      "question": "Python变量名必须以字母或下划线开头，并且区分字母大小写。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "18",
+      "question": "如果只需要`math`模块中的`sin`函数，建议使用`from math import sin`来导入，而不要使用`import math`导入整个模块。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "19",
+      "question": "无论使用单引号或者双引号包含的字符串，用`print()`函数输出的结果都一样。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "20",
+      "question": "每个`if`条件后面都要使用冒号。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "21",
+      "question": "`break`和`continue`语句可以单独使用。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "22",
+      "question": "`range()`函数是一个数字序列函数。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "23",
+      "question": "`pop()`方法在省略参数的情况下，会删除列表的最后一个元素。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "24",
+      "question": "已知列表`x=[1,2,3]`，那么执行语句`x=3`之后，变量x的地址不变。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "25",
+      "question": "`a='physics'`，则`tuple(a)`的值为`(physics)`。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "26",
+      "question": "Python字典支持双向索引。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "27",
+      "question": "删除列表中重复元素最简单的方法是将其转换为集合后再重新转换为列表。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "28",
+      "question": "集合可以作为字典的键。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "29",
+      "question": "调用函数时，在实参前面加一个`*`表示序列解包。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "30",
+      "question": "在Python中，`lambda`表达式也属于可调用对象。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "31",
+      "question": "Python使用符号`#`表示单行注释。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "32",
+      "question": "表达式`'a' + 1`的值为`b`。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "33",
+      "question": "在Python中可以使用`for`作为变量名。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "34",
+      "question": "Python中字符串的下标是从1开始。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "35",
+      "question": "在条件表达式中不允许使用赋值运算符`=`，会提示语法错误。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "36",
+      "question": "带有`else`子句的循环如果因为执行了`break`语句而退出的话，则会执行`else`子句中的代码。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "37",
+      "question": "假设已导入`random`标准库，那么表达式`max([random.randint(1,10) for i in range(10)])`的值一定是10。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "38",
+      "question": "已知x是个列表对象，那么执行语句`y=x`之后，对y所做的任何操作都会同样作用到x上。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "39",
+      "question": "`append()`方法可以将元素添加到列表的任意位置。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "40",
+      "question": "元组的访问速度比列表要快一些，如果定义了一系列常量值，并且主要用途仅仅是对其进行遍历而不需要进行任何修改，建议使用元组而不使用列表。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "41",
+      "question": "元组可以作为字典的“键”。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "42",
+      "question": "集合支持双向索引，`-1`表示最后一个元素的下标。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "43",
+      "question": "Python集合可以包含相同的元素。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "44",
+      "question": "函数的名称可以随意命名。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "45",
+      "question": "`lambda`表达式中可以使用任意复杂的表达式，但是必须只编写一个表达式。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "46",
+      "question": "Python是一种跨平台、开源、免费的高级动态编程语言。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "47",
+      "question": "当作为条件表达式时，`[]`与`None`等价。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "48",
+      "question": "一个数字5也是合法的Python表达式。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "49",
+      "question": "已知x为非空字符串，那么表达式`\"\".join(x.split()) == x`的值一定为True。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "50",
+      "question": "数字3和数字5直接作为条件表达式时，作用是一样的，都表示条件成立。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "51",
+      "question": "成员符号`in`和`for`语句里的`in`返回结果类型一样。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "52",
+      "question": "在循环中`continue`语句的作用是跳出当前循环。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "53",
+      "question": "已知列表x中包含超过5个以上的元素，那么语句`x = x[5:] + x[:5]`可以实现将列表x中的元素循环左移5位。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "54",
+      "question": "已知`x=(1,2,3,4)`，那么执行`x[0]=5`之后，x的值为`(5,2,3,4)`。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "55",
+      "question": "Python支持使用字典的“键”作为索引来访问字典中的值。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "56",
+      "question": "对于关键字`in`而言，集合的测试速度比列表快很多。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "57",
+      "question": "在Python3.5中运算符`+`不仅可以实现数值的相加、字符串连接，还可以实现列表、元组的合并和集合的并集运算。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "58",
+      "question": "位置参数必须在关键字参数的后面。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "59",
+      "question": "无法使用`lambda`表达式定义有名字的函数。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "60",
+      "question": "Python中的标识符不区分大小写。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "61",
+      "question": "Python采用的是基于值的自动内存管理方式。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "62",
+      "question": "在Python中可以使用`if`作为变量名。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "63",
+      "question": "字符串的切片选取的区间范围是从起始位置开始，到结束位置结束。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "64",
+      "question": "在编写多层循环时，为了提高运行效率，应尽量减少内循环中不必要的计算。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "65",
+      "question": "`if`语句、`while`语句、`for`语句都可以代码嵌套编程。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "66",
+      "question": "使用下标可以修改列表的元素值。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "67",
+      "question": "列表的元素可以做增加、修改、排序、反转等操作。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "68",
+      "question": "元组的访问速度比列表要快一些，如果定义了一系列常量值，并且主要用途仅仅是对其进行遍历而不需要进行任何修改，建议使用元组而不使用列表。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "69",
+      "question": "Python字典中的“键”不允许重复，是唯一的。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    },
+    {
+      "id": "70",
+      "question": "可以使用`del`删除集合中的部分元素。",
+      "answer": "F",
+      "type": "true_false",
+      "paper_id": "B"
+    },
+    {
+      "id": "71",
+      "question": "Python集合中的元素可以是元组。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "C"
+    },
+    {
+      "id": "72",
+      "question": "在定义函数时，某个参数名字前面带有两个`*`符号表示可变长度参数，可以接收任意多个关键参数并将其存放于一个字典之中。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "D"
+    },
+    {
+      "id": "73",
+      "question": "`lambda`表达式在功能上等价于函数，但是不能给`lambda`表达式起名字，只能用来定义匿名函数。",
+      "answer": "T",
+      "type": "true_false",
+      "paper_id": "A"
+    }
+  ]
+}

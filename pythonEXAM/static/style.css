@@ -1,0 +1,77 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; margin: 0; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; }
+h1, h2 { margin: 0; color: #2c3e50; }
+.back-link { text-decoration: none; color: #7f8c8d; font-weight: bold; }
+
+/* 首页样式 */
+.menu-container { text-align: center; padding-top: 50px; padding-bottom: 50px; }
+.subtitle { color: #95a5a6; margin-bottom: 40px; }
+.mode-section { margin-bottom: 40px; padding: 20px; background: #f9f9f9; border-radius: 10px; }
+.paper-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; }
+
+/* 按钮样式 */
+.btn { display: inline-block; padding: 12px 25px; border-radius: 6px; text-decoration: none; color: white; font-weight: bold; cursor: pointer; border: none; font-size: 1rem; transition: 0.2s; text-align: center; }
+.btn-endless { background: linear-gradient(135deg, #667eea, #764ba2); width: 60%; box-shadow: 0 4px 15px rgba(118, 75, 162, 0.4); }
+.btn-paper { background: #fff; color: #2c3e50; border: 2px solid #bdc3c7; }
+.btn-paper:hover { border-color: #3498db; color: #3498db; }
+
+/* 题目卡片 */
+.question-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+.q-tag { background: #3498db; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-right: 8px; vertical-align: middle; }
+.q-text { display: inline; font-size: 1.1em; line-height: 1.6; }
+.options-list { margin-top: 15px; }
+.option-item { display: block; padding: 10px 15px; margin: 8px 0; border: 1px solid #eee; border-radius: 6px; cursor: pointer; transition: 0.2s; }
+.option-item:hover:not(.disabled) { background: #f0f8ff; border-color: #3498db; }
+
+/* 答题状态 */
+.correct-opt { background-color: #d4edda !important; border-color: #28a745 !important; color: #155724; }
+.wrong-opt { background-color: #f8d7da !important; border-color: #dc3545 !important; color: #721c24; }
+.disabled { cursor: not-allowed; opacity: 0.8; }
+.ans-hint { margin-top: 10px; color: #e74c3c; font-weight: bold; font-size: 0.9em; }
+
+/* 试卷判分结果 */
+.card-correct { border-left: 5px solid #2ecc71; }
+.card-wrong { border-left: 5px solid #e74c3c; }
+/* --- 新增：查看答案功能样式 --- */
+
+.btn-peek {
+    background: #f1c40f; /* 黄色 */
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-peek:hover {
+    background: #f39c12;
+}
+
+.peek-box {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fef9e7;
+    border: 1px dashed #f1c40f;
+    border-radius: 5px;
+    color: #d35400;
+    font-weight: bold;
+    display: none; /* 默认隐藏 */
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 调整标准考试页面的布局 */
+.question-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}

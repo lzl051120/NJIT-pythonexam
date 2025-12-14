@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>无尽刷题模式</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .q-category { background: #9b59b6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-right: 8px; }
+        .feedback { margin-top: 20px; padding: 15px; border-radius: 8px; display: none; line-height: 1.6; }
+        .feedback.correct { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .feedback.wrong { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .fill-input { padding: 10px; width: 60%; font-size: 1.1em; border: 2px solid #bdc3c7; border-radius: 6px; }
+        .btn-confirm { background: #2ecc71; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 1em; margin-left: 10px; }
+        .stats-bar { display: flex; justify-content: space-between; color: #7f8c8d; font-size: 0.9em; margin-bottom: 20px; }
+        /* 调整按钮布局 */
+        .action-bar { margin-top: 15px; display: flex; gap: 10px; align-items: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/" class="back-link">← 退出</a>
+            <h2>♾️ 无尽挑战</h2>
+        </div>
+
+        <div class="stats-bar">
+            <span>已挑战: <span id="done-count">0</span> 题</span>
+            <span>题库剩余: <span id="remain-count">--</span></span>
+        </div>
+
+        <div id="question-area" class="question-card">
+            <div class="loading">正在加载题库...</div>
+        </div>
+
+        <button id="next-btn" class="btn" style="width:100%; display:none; margin-top:20px;" onclick="nextQuestion()">下一题</button>
+    </div>
+
+    <script>
+        let questionPool = [];
+        let currentQ = null;
+        let answeredIds = JSON.parse(localStorage.getItem('answeredIds') || '[]');
+
+        // 初始化
+        fetch('/api/all_questions')
+            .then(res => res.json())
+            .then(data => {
+                questionPool = data.filter(q => !answeredIds.includes(q.id + q.type));
+                document.getElementById('done-count').innerText = answeredIds.length;
+                document.getElementById('remain-count').innerText = questionPool.length;
+                nextQuestion();
+            });
+
+        function nextQuestion() {
+            if (questionPool.length === 0) {
+                document.getElementById('question-area').innerHTML = `<div style="text-align:center; padding:50px;"><h3>🎉 题库已刷爆！</h3><p>你真是太强了！</p><button class="btn" onclick="clearProgress()">重置进度</button></div>`;
+                document.getElementById('next-btn').style.display = 'none';
+                return;
+            }
+
+            currentQ = questionPool.pop();
+            renderQuestion(currentQ);
+            document.getElementById('next-btn').style.display = 'none';
+            document.getElementById('remain-count').innerText = questionPool.length;
+        }
+
+        function renderQuestion(q) {
+            let html = `<div class="q-content">
+                <span class="q-category">${q.category}</span>
+                <p class="q-text">${q.question}</p>
+            </div>`;
+
+            if (q.type === 'choice') {
+                html += `<div class="options-list">`;
+                q.options.forEach((opt, idx) => {
+                    const label = ['A','B','C','D'][idx];
+                    html += `<div class="option-item" onclick="checkChoice('${label}', this)">
+                                <span class="opt-label">${label}.</span> ${opt}
+                             </div>`;
+                });
+                html += `</div>`;
+            } else if (q.type === 'true_false') {
+                html += `<div class="options-list">
+                            <div class="option-item" onclick="checkTF('T', this)">✅ 正确 (True)</div>
+                            <div class="option-item" onclick="checkTF('F', this)">❌ 错误 (False)</div>
+                         </div>`;
+            } else if (q.type === 'fill_in') {
+                html += `<div style="margin-top:20px;">
+                            <input type="text" id="fill-val" class="fill-input" placeholder="请输入答案" autocomplete="off">
+                            <button class="btn-confirm" onclick="checkFill()">提交</button>
+                         </div>`;
+            }
+
+            // 新增：操作栏（查看答案按钮）
+            html += `<div class="action-bar">
+                        <button class="btn-peek" onclick="peekAnswer()">👀 查看答案</button>
+                     </div>
+                     <div id="peek-box" class="peek-box"></div> <div id="feedback" class="feedback"></div>`;
+            
+            document.getElementById('question-area').innerHTML = html;
+        }
+
+        // --- 新增：查看答案逻辑 ---
+        function peekAnswer() {
+            const box = document.getElementById('peek-box');
+            let displayAns = currentQ.answer;
+            if (currentQ.type === 'true_false') {
+                displayAns = currentQ.answer === 'T' ? '正确 (True)' : '错误 (False)';
+            }
+            box.innerHTML = `💡 参考答案：${displayAns}`;
+            box.style.display = 'block';
+        }
+
+        // --- 判分逻辑 (保持不变) ---
+        function showFeedback(isCorrect, correctAns) {
+            const fb = document.getElementById('feedback');
+            fb.style.display = 'block';
+            if (isCorrect) {
+                fb.className = 'feedback correct';
+                fb.innerHTML = `<strong>🎉 回答正确！</strong>`;
+            } else {
+                fb.className = 'feedback wrong';
+                fb.innerHTML = `<strong>⚠️ 回答错误</strong><br>正确答案：${correctAns}`;
+            }
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('peek-box').style.display = 'none'; // 回答后隐藏偷看框
+            
+            answeredIds.push(currentQ.id + currentQ.type);
+            localStorage.setItem('answeredIds', JSON.stringify(answeredIds));
+            document.getElementById('done-count').innerText = answeredIds.length;
+        }
+
+        function checkChoice(userVal, el) {
+            if (document.querySelector('.disabled')) return;
+            document.querySelectorAll('.option-item').forEach(e => e.classList.add('disabled'));
+            const isCorrect = userVal === currentQ.answer;
+            if (isCorrect) el.classList.add('correct-opt');
+            else el.classList.add('wrong-opt');
+            showFeedback(isCorrect, currentQ.answer);
+        }
+
+        function checkTF(userVal, el) {
+            if (document.querySelector('.disabled')) return;
+            document.querySelectorAll('.option-item').forEach(e => e.classList.add('disabled'));
+            const isCorrect = userVal === currentQ.answer;
+            if (isCorrect) el.classList.add('correct-opt');
+            else el.classList.add('wrong-opt');
+            const displayAns = currentQ.answer === 'T' ? '正确 (True)' : '错误 (False)';
+            showFeedback(isCorrect, displayAns);
+        }
+
+        function checkFill() {
+            const input = document.getElementById('fill-val');
+            if (input.disabled) return;
+            input.disabled = true;
+            const userVal = input.value.trim();
+            const isCorrect = userVal.replace(/\s/g, '').toLowerCase() === currentQ.answer.replace(/\s/g, '').toLowerCase();
+            showFeedback(isCorrect, currentQ.answer);
+        }
+
+        function clearProgress() {
+            if(confirm('确定要清空刷题记录吗？')) {
+                localStorage.removeItem('answeredIds');
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>

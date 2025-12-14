@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Python 考试系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container menu-container">
+        <h1>🐍 Python 智能考试系统</h1>
+        <p class="subtitle">请选择考试模式</p>
+        
+        <div class="mode-section">
+            <h2>🔥 无尽挑战模式</h2>
+            <p>随机刷题，永不重复，即时判分</p>
+            <a href="/endless" class="btn btn-endless">进入无尽模式</a>
+        </div>
+
+        <div class="mode-section">
+            <h2>📄 标准模拟试卷</h2>
+            <p>全真模拟，均匀题库，限时交卷</p>
+            <div class="paper-grid">
+                <a href="/exam/A" class="btn btn-paper">试卷 A</a>
+                <a href="/exam/B" class="btn btn-paper">试卷 B</a>
+                <a href="/exam/C" class="btn btn-paper">试卷 C</a>
+                <a href="/exam/D" class="btn btn-paper">试卷 D</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

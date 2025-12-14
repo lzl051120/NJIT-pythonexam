@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>试卷 {{ paper_id }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/" class="back-link">← 放弃考试</a>
+            <h2>模拟试卷 {{ paper_id }}</h2>
+        </div>
+
+        <form id="exam-form">
+            <div class="section-title">一、单选题 (每题2分)</div>
+            {% for q in paper.choice %}
+            <div class="question-card" data-ans="{{ q.answer }}" id="card_{{ q.id }}">
+                <p><strong>{{ loop.index }}. {{ q.question }}</strong></p>
+                <div class="options-list">
+                    {% for opt in q.options %}
+                    <label class="option-item">
+                        <input type="radio" name="c_{{ q.id }}" value="{{ ['A','B','C','D'][loop.index0] }}">
+                        {{ ['A','B','C','D'][loop.index0] }}. {{ opt }}
+                    </label>
+                    {% endfor %}
+                </div>
+                <div class="question-footer">
+                    <button type="button" class="btn-peek" onclick="toggleAns(this, '{{ q.answer }}')">👀 查看答案</button>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="section-title">二、判断题 (每题1分)</div>
+            {% for q in paper.true_false %}
+            <div class="question-card" data-ans="{{ q.answer }}">
+                <p><strong>{{ loop.index }}. {{ q.question }}</strong></p>
+                <div class="options-list">
+                    <label class="option-item"><input type="radio" name="tf_{{ q.id }}" value="T"> ✅ 正确</label>
+                    <label class="option-item"><input type="radio" name="tf_{{ q.id }}" value="F"> ❌ 错误</label>
+                </div>
+                <div class="question-footer">
+                    {% set ans_text = '正确' if q.answer == 'T' else '错误' %}
+                    <button type="button" class="btn-peek" onclick="toggleAns(this, '{{ ans_text }}')">👀 查看答案</button>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="section-title">三、填空题 (每题2分)</div>
+            {% for q in paper.fill_in %}
+            <div class="question-card" data-ans="{{ q.answer }}">
+                <p><strong>{{ loop.index }}. {{ q.question }}</strong></p>
+                <input type="text" name="fi_{{ q.id }}" class="fill-input" placeholder="请输入答案">
+                <div class="question-footer">
+                    <button type="button" class="btn-peek" onclick="toggleAns(this, '{{ q.answer }}')">👀 查看答案</button>
+                </div>
+            </div>
+            {% endfor %}
+
+            <button type="button" class="btn" style="width:100%; margin-top:30px;" onclick="submitPaper()">提交试卷</button>
+        </form>
+    </div>
+
+    <script>
+        // 切换显示/隐藏答案
+        function toggleAns(btn, ans) {
+            let nextEl = btn.parentNode.nextElementSibling;
+            if (nextEl && nextEl.classList.contains('peek-box')) {
+                nextEl.remove();
+                btn.innerText = "👀 查看答案";
+            } else {
+                let box = document.createElement('div');
+                box.className = 'peek-box';
+                box.style.display = 'block';
+                box.innerText = `💡 答案：${ans}`;
+                btn.parentNode.parentNode.appendChild(box);
+                btn.innerText = "🙈 隐藏答案";
+            }
+        }
+
+        function submitPaper() {
+            let score = 0;
+            const cards = document.querySelectorAll('.question-card');
+            
+            cards.forEach(card => {
+                const correct = card.getAttribute('data-ans');
+                let userAns = '';
+                
+                const radio = card.querySelector('input[type="radio"]:checked');
+                const text = card.querySelector('input[type="text"]');
+                
+                if (radio) userAns = radio.value;
+                if (text) userAns = text.value.trim();
+
+                const isCorrect = userAns.replace(/\s/g,'').toLowerCase() === correct.replace(/\s/g,'').toLowerCase();
+                
+                card.classList.remove('card-correct', 'card-wrong');
+
+                if (isCorrect) {
+                    score += 2; 
+                    card.classList.add('card-correct');
+                } else {
+                    card.classList.add('card-wrong');
+                    if(!card.querySelector('.ans-hint')) {
+                        let hint = document.createElement('div');
+                        hint.className = 'ans-hint';
+                        hint.innerHTML = `❌ 你的答案：${userAns || '(未填)'} <br> ✅ 正确答案: <strong>${correct}</strong>`;
+                        card.appendChild(hint);
+                    }
+                }
+            });
+
+            alert(`考试结束！\n你的预估得分: ${score}`);
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

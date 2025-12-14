@@ -1,0 +1,1478 @@
+第 1 题
+Python 语言属于 ()。
+(A) 机器语言
+(B) 汇编语言
+(C) 高级语言
+(D) 科学计算语言
+标准答案：C
+第 2 题
+以下关于类型语言的描述中，正确的是 ()。
+(A) 静态语言采用解释方式执行，脚本语言采用编译方式执行
+(B) C 语言是静态语言，Python 是脚本语言
+(C) 编译是将目标代码抓换成源代码的过程
+(D) 解释是将源代码一次性转换成目标代码同时逐条执行目标代码的过程
+标准答案：B
+第 3 题
+表达式 int ('100/3') 的执行结果是 ()。
+(A)ValueError
+(B)33.3
+(C)33
+(D)100/3
+标准答案：A
+第 4 题
+下列选项中，Python 不支持的数据类型有 ()。
+(A)int
+(B)char
+(C)float
+(D)list
+标准答案：B
+第 5 题
+以下不是 Python 语言保留字的是 ()。
+(A)del
+(B)int
+(C)try
+(D)None
+标准答案：B
+第 6 题
+以下关于 Python 程序语法元素的描述，正确的选项是 ()。
+(A) 缩进格式要求程序对齐，增添了编程难度
+(B) Python 变量名允许以数字开头
+(C) true 是 Python 的保留字
+(D) 所有的 if、while、def 语句后面都要用 ":" 冒号结尾
+标准答案：D
+第 7 题
+下面代码的输出结果是 ()。
+python
+运行
+name='Python语言程序设计'
+print(name[2:-2])
+(A) thon 语言程序
+(B) thon 语言程序设
+(C) ython 语言程序
+(D) ython 语言程序设
+标准答案：A
+第 8 题
+以下程序的输出结果是 ()。
+python
+运行
+s1="企鹅"
+s2="超级游泳健将"
+print("{0:^3}:{1:!<9}".format(s1,s2))
+(A) 企鹅:! 超级游泳健将！！
+(B) 企鹅：超级游泳健将！！！
+(C) 企鹅：超级游泳健将
+(D) 企鹅：超级游泳健将！！！
+标准答案：B
+第 9 题
+执行图中的代码，输入 60, 输出的结果是 ()。
+python
+运行
+s = eval(input())
+k='合格'if s >=60 else'不合格'
+print(s, k)
+(A) 合格
+(B) 60 不合格
+(C)60
+(D) 60 合格
+标准答案：D
+第 10 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+x, y, z=5, -10, 2
+if x<y:
+    if y<0:
+        z=0
+    else:
+        z +=1
+print(z)
+(A)3
+(B)2
+(C)1
+(D)0
+标准答案：B
+第 11 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+result =0
+for i in range(10):
+    if i%3:
+        break
+    result +=i
+else:
+    print(result)
+(A) 没有输出
+(B) 程序错误
+(C)0
+(D)18
+标准答案：A
+第 12 题
+以下代码执行后，输出的结果是 ()。
+python
+运行
+for x in range(2,8):
+    y=0
+    y+=x
+print(y)
+(A)27
+(B)8
+(C)7
+(D)35
+标准答案：C
+第 13 题
+执行如图的程序，输出的结果是 ()。
+python
+运行
+for c in 'Python NCRE':
+    if c=='N':
+        break
+    print(c)
+(A) 无输出
+(B)Python
+(C)Pytho
+(D)Python CRE
+标准答案：A
+第 14 题
+下面代码的输出结果是 ()。
+python
+运行
+listV =list(range(5))
+print(listV)
+(A)0 1 2 3 4
+(B)[1, 2, 3, 4, 5]
+(C)[0, 1, 2, 3, 4]
+(D)1 2 3 4 5
+标准答案：C
+第 15 题
+执行如图的程序，list_two 的值是 ()。
+python
+运行
+list_one =[4,5,6]
+list_two =list_one
+list_one[2]=3
+(A)[4,5,6]
+(B)[4,3,6]
+(C)[4,5,3]
+(D) 都不对
+标准答案：C
+第 16 题
+关于 Python 序列类型的通用操作符和函数，以下选项中描述错误的是 ()。
+(A) 如果 x 不是 s 的元素，x not in s 返回 True
+(B) 如果 s 是一个序列，s=[1, "kate", True], s [3] 返回 True
+(C) 如果 s 是一个序列，s=[1,"kate",True], s [-1] 返回 True
+(D) 如果 x 是 s 的元素，x in s 返回 True
+标准答案：B
+第 17 题
+以下不是 Python 组合数据类型的是 ()。
+(A) 元组类型
+(B) 字符串类型
+(C) 数组类型
+(D) 列表类型
+标准答案：C
+第 18 题
+关于字典的描述，错误的是 ()。
+(A) 字典的元素以键为索引进行访问
+(B) 字典的一个键可以对应多个值
+(C) 字典长度是可变的
+(D) 字典是键值对的结合，键值对之间没有顺序
+标准答案：B
+第 19 题
+下列哪种说法是错误的 ()。
+(A) 除字典类型外，所有标准对象均可以用于布尔测试
+(B) 空字符串的布尔值是 False
+(C) 空列表对象的布尔值是 False
+(D) 值为 0 的任何数字对象的布尔值是 False
+标准答案：A
+第 20 题
+下列选项中，正确定义了一个字典的是 ()。
+(A)a = ['a',1,'b',2 'c,3]
+(B)b = ('a',1,'b',2 c,3)
+(C)c={'a',1,'b',2'c',3)
+(D)d ={'a':1,'b':2, 'c':3}
+标准答案：D
+第 21 题
+以下程序的输出结果是 ()。
+python
+运行
+c=set([1,2,3,4,5,6])
+d = set([1,2,3,8,9,0])
+print(d ^c)
+(A)(1, 2, 3)
+(B)(4, 5, 6}
+(C)(0, 8, 9)
+(D)(0, 4, 5, 6, 8, 9)
+标准答案：D
+第 22 题
+以下关于组合类型的描述，正确的是 ()。
+(A) 空字典可以用大括号来创建
+(B) 可以用 set 创建集合，用中括号和赋值语句增加新元素
+(C) 字典数据类型里可以用列表做键
+(D) 字典的 items () 函数返回一个键值对，并用元组表述
+标准答案：A
+第 23 题
+调用以下函数返回的值 ()。
+python
+运行
+def myfun():
+    pass
+(A) 空字符串
+(B)None
+(C)0
+(D) 出错不能运行
+标准答案：B
+第 24 题
+以下函数的分类是 ()。
+python
+运行
+def calculate(number):
+    result = 0
+    i=1
+    while i <=number:
+        result = result +i
+        i+=1
+    return result
+result = calculate(100)
+print('1~100的累积和为: ', result)
+(A) 无参无返回值函数
+(B) 无参有返回值函数
+(C) 有参无返回值函数
+(D) 有参有返回值函数
+标准答案：D
+第 25 题
+关于函数的可变参数，可变参数 * args 传入函数时存储的类型是 ()。
+(A)list
+(B)set
+(C)dict
+(D)tuple
+标准答案：D
+第 26 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+def chanageInt(number2):
+    number2 = number2+1
+    print("changeInt: number2=", number2)
+#调用
+number1=2
+chanageInt(number1)
+print("number:", number1)
+(A)changeInt: number2=3; number: 3
+(B)changeInt: number2= 3; number: 2
+(C)number: 2; changeInt: number2= 2
+(D)number: 2; changeInt: number2= 3
+标准答案：B
+第 27 题
+在一行上写多条 Python 语句使用的符号是 ()。
+(A) 分号
+(B) 点号
+(C) 冒号
+(D) 逗号
+标准答案：A
+第 28 题
+在屏幕上打印输出 Hello World, 使用的 Python 语句是 ()。
+(A)print("Hello World")
+(B)printin("Hello World")
+(C)print(Hello World)
+(D)printf('Hello World)
+标准答案：A
+第 29 题
+以下选项中，不属于 Python 保留字的是 ()。
+(A)import
+(B)def
+(C)elif
+(D)type
+标准答案：D
+第 30 题
+表达式 3*4**2//8%7 的计算结果是 ()。
+(A)3
+(B)6
+(C)4
+(D)5
+标准答案：B
+第 31 题
+以下不是 Python 语言所使用特殊含义符号的是 ()。
+(A)$
+(B)**
+(C)//
+(D)!=
+标准答案：A
+第 32 题
+下列选项中，Python 不支持的数据类型有 ()。
+(A)int
+(B)char
+(C)float
+(D)str
+标准答案：B
+第 33 题
+如果 name =' 全国计算机等级考试二级 Python', 以下选项中输出错误的是 ()。
+(A)>>>print (name [:]) 全国计算机等级考试二级 Python
+(B)>>> print(name[11:]) Python
+(C)>>>print (name [:11]) 全国计算机等级考试二级
+(D)>>> print (name [0], name [8], name [-1]) 全试 n
+标准答案：D
+第 34 题
+下列程序的运行结果是 ()。
+python
+运行
+>>> s = 'PYTHON'
+>>> "{0:3}".format(s)
+(A)'PYTH
+(B)'PYTHON
+(C)PYT
+(D) 出错
+标准答案：B
+第 35 题
+以下关于 Python 字符串的描述中，错误的是 ()。
+(A) 字符串是字符的序列，可以按照单个字符访问
+(B) 字符串包括两种序号体系：正向递增和反向递减
+(C) Python 字符串提供区间访问方式，采用 [N:M] 格式，表示字符串中从 N 到 M 的索引子字符串 (包含 N 和 M)
+(D) 字符串是用一对双引号 "" 或者单引号 '' 括起来的零个或者多个字符
+标准答案：C
+第 36 题
+以下选项中值为 False 的是 ()。
+(A)>>> 8 is not 20
+(B)>>> False !=0
+(C)>>>2!=4
+(D)>>> 8 is 8
+标准答案：B
+第 37 题
+表达式 3<5>0 的值是 ()。
+(A)0
+(B)1
+(C)True
+(D)False
+标准答案：C
+第 38 题
+执行如图的程序，执行结果是 ()。
+python
+运行
+for s in "thisisabook":
+    if s=="i" or s=="o":
+        continue
+    print(s, end="")
+(A)thsisabok
+(B)thssabk
+(C)thssabook
+(D)thisisabk
+标准答案：B
+第 39 题
+执行如图的程序中，语句 print (i+j) 共执行了 () 次。
+python
+运行
+count =0
+for i in range(6):
+    for j in range(2, 10, 2):
+        print(i+j)
+        count +=1
+(A)30
+(B)20
+(C)24
+(D)28
+标准答案：C
+第 40 题
+图 5-03 执行如图的程序，输入 "dog123"(不含引号), 则输出结果是 ()
+python
+运行
+w =input()
+for x in w:
+    if'0'<=x<='9':
+        continue
+    else:
+        w = w.replace(x, "")
+print(w)
+(A)dog
+(B)dog123
+(C)123
+(D)123dog
+标准答案：B
+第 41 题
+在 Python 中执行如图程序后，s 值为 ()。
+python
+运行
+s = ['a', 'b']
+s.append([1, 2])
+s.insert(1, 7)
+(A)['a', 7, 'b', 1, 2]
+(B)[[1, 2], 7, 'a', 'b']
+(C)[1, 2, 'a', 7, 'b']
+(D)['a', 7, 'b',[1, 2]]
+标准答案：D
+第 42 题
+下列函数中，用于返回列表中元素最小值的是 ()。
+(A)len()
+(B)max()
+(C)min()
+(D)tuple()
+标准答案：C
+第 43 题
+Python 内置函数 () 可以返回列表、元组、字典、集合、字符串以及 range 对象中元素个数。
+(A)type()
+(B)index()
+(C)len()
+(D)count()
+标准答案：C
+第 44 题
+已知 x=(3,), 那么表达式 x*4 的值为 ()。
+(A)(3, 3, 3, 3)
+(B)12
+(C) 提示错误
+(D)81
+标准答案：A
+第 45 题
+如图的语句，执行结果是 ()。
+python
+运行
+dd ={1:90, 2:87, 3:93}
+print(max(dd), min(dd))
+(A)3 2
+(B)93 87
+(C)93 90
+(D)3 1
+标准答案：D
+第 46 题
+表达式 max ({2:10, 8:4, 5:99}) 的结果是 ()。
+(A)10
+(B)99
+(C)8
+(D)0.277083333
+标准答案：C
+第 47 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+dict1 = {'a': 1,'b':2, 'b':3}
+temp = dict1['b']
+print(temp)
+(A)'b':2}
+(B)1
+(C)2
+(D)3
+标准答案：D
+第 48 题
+下列说法中正确的是 ()。
+(A) set () 可将任何类型转换为集合类型
+(B) remove () 会删除集合中的元素，不论元素是否存在都不报错
+(C) 集合中的元素不可重复，元素类型只能是不可变数据类型
+(D) 集合元素是有序的
+标准答案：C
+第 49 题
+以下程序的输出结果是 ()。
+python
+运行
+c =set([1,2,3,4,5,6])
+d = set([1,2,3,8,9,0])
+print(d & c)
+(A)(1, 2, 3)
+(B)(4, 5, 6}
+(C)(0, 8, 9)
+(D)(0, 1, 2, 3, 4, 5, 6, 8, 9)
+标准答案：A
+第 50 题
+使用 () 关键字创建自定义函数。
+(A)function
+(B)func
+(C)def
+(D)procedure
+标准答案：C
+第 51 题
+执行如图的程序，运行结果是 ()。
+python
+运行
+def greeting(args1, *args):
+    print(args)
+greeting('HTY','LFF','ZH','Hello')
+(A)['LFF', 'ZH', 'Hello']
+(B)('ZH', 'Hello')
+(C) 出错
+(D)'LFF','ZH', 'Hello '
+标准答案：B
+第 52 题
+执行如图的代码，其输出结果是 ()。
+python
+运行
+def calu(x=3, y=2):
+    return x*y
+a ='abc'
+b=2
+print(calu(a, b), end=', ')
+(A)abcabc,6
+(B)abcabc
+(C)6,
+(D)abcabc,
+标准答案：D
+第 53 题
+在 Python 3.x 中 print ([1,2,3]) 语句的执行结果是 ()。
+(A) 错误
+(B)[1,2,3]
+(C)1 2 3
+(D)*[1,2,3]
+标准答案：B
+第 54 题
+表达式 sorted (['123','121', '231'], key=lambda x:x [2]) 的值为 ()。
+(A)['12', '12', '23']
+(B)['121','231', '123']
+(C)['231', '121', '123']
+(D)['123', '121', '231']
+标准答案：B
+第 55 题
+以下关于 Python 的说法，错误的是 ()。
+(A) 拥有庞大的计算生态
+(B) 有很多专业库供调用
+(C) 有严格的缩进规则
+(D) 代码不区分大小写
+标准答案：D
+第 56 题
+在 Python 语言中，可以作为源文件后缀名的是 ()。
+(A)pyc
+(B)py
+(C)python
+(D)pdf
+标准答案：B
+第 57 题
+表达式 5//2 的结果是 ()。
+(A)2
+(B)2.0
+(C)2.55
+(D)2.6
+标准答案：A
+第 58 题
+以下不属于 Python 语言保留字的是 ()。
+(A)do
+(B)while
+(C)True
+(D)pass
+标准答案：A
+第 59 题
+下列语句中，() 在 Python 中是非法的。
+(A)x=y=z=1
+(B)x=(y=z+1)
+(C)x,y=y,x
+(D)x+=y
+标准答案：B
+第 60 题
+下列数据中，不属于字符串的是 ()。
+(A)'ab'
+(B)'perface'
+(C)"52wo"
+(D)abc
+标准答案：D
+第 61 题
+下列方法中，能够返回某个子串在字符串中出现次数的是 ()。
+(A)length
+(B)index
+(C)count
+(D)find
+标准答案：C
+第 62 题
+下面代码的输出结果是 ()。
+python
+运行
+s = "The python language is a cross platform language."
+print(s.find('language', 30))
+(A)10
+(B)40
+(C) 系统报错
+(D)30
+标准答案：B
+第 63 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+result, x, y, ok1, ok2 =50, 40, 20, 10, 30
+if x<y:
+    if y!=10:
+        if not ok1:
+            result =1
+        elif ok2:
+            result = -1
+    else:
+        result =0
+print(result)
+(A)1
+(B)0
+(C)-1
+(D)50
+标准答案：D
+第 64 题
+下列关于分支结构的描述错误的是 ()。
+(A) 分支结构包括单分支结构、二分支结构和多分支结构
+(B) 单分支结构的书写形式包括 (if-else)
+(C) 多分支结构通常适用于判断一类条件或同一个条件的多个执行路径
+(D) 使用多分支结构时需要注意多个逻辑条件的先后顺序，避免逻辑上的错误
+标准答案：B
+第 65 题
+下列选项中，会输出 1,2,3,4,5 五个数字的是 ()。
+(A)for i in range(5):print(i)
+(B)i =1; while i <5:print(i);i=i+1
+(C)for i in range(4):print(i+1)
+(D)i=0; while i <5:print(i);i=i+1
+标准答案：C
+第 66 题
+如图的代码，执行后输出的结果是 ()。
+python
+运行
+for i in 'NJITcnNice!':
+    if i=='i':
+        break
+    print(i, end='')
+(A)NJITcn
+(B)NJITcnN
+(C)NJITcnNi
+(D)NJITcnNice
+标准答案：B
+第 67 题
+执行如图的代码，输出的结果是 ()。
+python
+运行
+s=0
+for i in range(1,101):
+    if i%2==0:
+        s +=i
+    else:
+        s-=i
+print(s)
+(A)-50
+(B)2550
+(C)50
+(D)2500
+标准答案：C
+第 68 题
+语句 for i in range (3):print (i, end=' ') 的输出结果为 ()。
+(A)0,1,2,3,
+(B)0,1,2
+(C)0 1 2
+(D)0 1 2 3
+标准答案：C
+第 69 题
+执行程序的输出结果是 ()。
+python
+运行
+x = ['90', '87', '90']
+n =90
+print(x.count(n))
+(A)None
+(B)0
+(C)1
+(D)2
+标准答案：B
+第 70 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+s = ["seashell", "gold", "pink", "brown", "purple", "tomato"]
+print(s[4:])
+(A)['purple']
+(B)['seashell', 'gold', 'pink', 'brown']
+(C)['gold', 'pink', 'brown','purple', 'tomato']
+(D)['purple', 'tomato']
+标准答案：D
+第 71 题
+下列操作会正常输出结果的是 ()。
+(A)list[-4:-1:-1]
+(B)list[:3:2]
+(C)list[1:3:0]
+(D)list['a':'d':2]
+标准答案：B
+第 72 题
+对于列表 ls 的操作，以下选项中描述错误的是 ()。
+(A) ls.clear (): 删除 ls 的最后一个元素
+(B) ls.copy (): 生成一个新列表，复制 ls 的所有元素
+(C) ls.reverse (): 列表 ls 的所有元素反转
+(D) ls.append (x): 在 ls 最后增加一个元素
+标准答案：A
+第 73 题
+Python 语句 print (type ([1,2], [3,4])) 的结果是 ()。
+(A)<class 'tuple'>
+(B)<class 'dict'>
+(C)<class 'set'>
+(D)<class 'list'>
+标准答案：A
+第 74 题
+执行如图的程序，输出的结果是 ()。
+python
+运行
+test = {"age":18, "score":[89, 95],"name":"Hawking"}
+print(test["score"], test.get("name", "rose"))
+(A)89,95 Hawking
+(B)[89, 95] Hawking
+(C)[89, 95] Rose
+(D)[89, 95] name
+标准答案：B
+第 75 题
+字典的 () 方法返回字典的 "键" 列表。
+(A)keys()
+(B)key()
+(C)values()
+(D)items()
+标准答案：A
+第 76 题
+执行如图的程序，以下选项中描述正确的是 ()。
+python
+运行
+MonthandFlower={"1月":"梅花","2月":"杏花","3月":"桃花",...}
+n = input("请输入月份(1-12):")
+print(MonthandFlower.get(n))
+(A) 代码实现了获取一个整数 (1-12) 来表示月份，输出该月份对应的代表花名
+(B) MonthandFlower 是列表类型变量
+(C) MonthandFlower 是一个元组
+(D) MonthandFlower 是集合类型变量
+标准答案：A
+第 77 题
+关于 Python 组合数据类型，以下选项中描述错误的是 ()。
+(A) 组合数据类型可以分为 3 类：序列类型、集合类型和映射类型
+(B) 序列类型是二维元素向量，元素之间存在先后关系，通过序号访问
+(C) Python 的 str、tuple 和 list 类型都属于序列类型
+(D) Python 组合数据类型能够将多个同类型或不同类型的数据组织起来，通过单一的表示使数据操作更有序、更容易
+标准答案：B
+第 78 题
+以下 () 会得到 (1,2,3,4)。
+(A)list('1234')
+(B)set('1234')
+(C)tuple('1234')
+(D) 其它选项都不对
+标准答案：D
+第 79 题
+关于函数的目的与意义，以下选项中描述错误的是 ()。
+(A) 程序功能抽象，以支持代码重用
+(B) 使用时无须了解函数内部实现细节
+(C) 函数能调用未实现的函数
+(D) 有助于采用分而治之的策略编写大型复杂程序
+标准答案：C
+第 80 题
+执行如图的程序，输出的结果是 ()。
+python
+运行
+z=10
+def demo(b=2, a=4):
+    global z
+    z += 3*a+5*b
+    return z
+print(z, demo(4, 2))
+(A)36 36
+(B)32 32
+(C)10 36
+(D)10 32
+标准答案：C
+第 81 题
+关于函数，以下选项中描述错误的是 ()。
+(A) 函数在需要时被调用，其代码被执行
+(B) 函数是具有特定功能的可重用代码片段，实现解决某个特定问题的算法
+(C) 函数使用时需要了解函数内部实现细节
+(D) 函数主要通过接口 (interface) 与外界通信，传递信息
+标准答案：C
+第 82 题
+执行图中的代码，可能的输出结果是 ()。
+python
+运行
+import random
+def test():
+    x= random.randint(0, 10)
+    y = random.randint(10, 20)
+    return ([x, y])
+print(test())
+(A)(6, 20)
+(B)[6, 20]
+(C)[11, 13]
+(D)(11, 13)
+标准答案：B
+第 83 题
+已知 x=[[1,3,3], [2,2,1] ], 那么表达式 sorted (x, key=lambda item:item [1]) 的值为 ()。
+(A)[[2, 2, 1], [1, 3, 3]]
+(B)[[1, 3], [2, 1]]
+(C)[[1, 3, 3], [1, 2, 3]]
+(D) 错误
+标准答案：A
+第 84 题
+以下选项中，不是建立字典的方式是 ()。
+(A)d ={[1,2]:1, [3,4]:3}
+(B)d ={(1,2):1, (3,4):3}
+(C) d ={' 张三 ':1, ' 李四 ':2}
+(D)d ={1:[1,2], 3:[3,4]}
+标准答案：A
+第 85 题
+Python 语句 print (type (())) 的输出结果是 ()。
+(A)<class 'set'>
+(B)<class 'dict'>
+(C)<class 'list'>
+(D)<class 'tuple'>
+标准答案：D
+第 86 题
+以下程序的输出结果是 ()。
+python
+运行
+c=set([1,2,3,4,5,6])
+d = set([1,2,3,8,9,0])
+print(d -c)
+(A)(1, 2, 3)
+(B)(4, 5, 6}
+(C)(0, 8, 9)
+(D)(0, 4, 5, 6, 8, 9)
+标准答案：C
+第 87 题
+图中的代码，执行的结果是 ()。
+python
+运行
+import random
+sp =100
+def test(x=2.0, y=4.0):
+    global sp
+    sp += x*y
+    return sp
+print(sp, test(4, 3))
+(A)112 112
+(B)100 100
+(C)112 100
+(D)100 112
+标准答案：D
+第 88 题
+执行如图的程序，以下选项中描述正确的是 ()。
+python
+运行
+def fact(n, m=1):
+    s=1
+    for i in range(1, n+1):
+        s *=i
+    return s//m
+print(fact(m=5, n=10))
+(A) 参数按照名称传递
+(B) 执行结果为 10886400
+(C) 按可变参数调用
+(D) 按位置参数调用
+标准答案：A
+第 89 题
+执行如图的程序，运行结果是 ()。
+python
+运行
+ls =["F","f"]
+def fun(a):
+    ls.append(a)
+    return ls
+print(fun("C"))
+(A)['F', 'f', 'C']
+(B)['C']
+(C) 出错
+(D)['F', 'f']
+标准答案：A
+第 90 题
+执行如图的代码，输出的结果是 ()。
+python
+运行
+f = lambda x,y:x if x<y else y
+a = f('aa', 'bb')
+b =f('bb','aa')
+print(a, b)
+(A)aa aa
+(B)aa bb
+(C)bb aa
+(D)bb bb
+标准答案：A
+第 91 题
+计算机中信息处理和信息储存用 ()。
+(A) 十进制代码
+(B) 二进制代码
+(C) 十六进制代码
+(D) ASCII 代码
+标准答案：B
+第 92 题
+Python 源程序执行的方式 ()。
+(A) 编译执行
+(B) 解释执行
+(C) 直接执行
+(D) 边编译边执行
+标准答案：B
+第 93 题
+关于赋值语句，以下选项中描述错误的是 ()。
+(A) 在 Python 语言中，"=" 表示赋值，即将 "=" 右侧的计算结果赋值给左侧变量，包含 "=" 的语句称为赋值语句
+(B) a,b,c= b,c,a 是不合法的
+(C) a, b = b,a 可以实现 a 和 b 值的互换
+(D) 赋值与二元操作符可以组合，例如:&=
+标准答案：B
+第 94 题
+假设 a=9, b=2, 那么下列运算中，错误的是 ()。
+(A) a+b 的值是 11
+(B) a//b 的值是 4
+(C) a% b 的值是 1
+(D) a**b 的值是 18
+标准答案：D
+第 95 题
+以下不是 Python 语言保留字的是 ()。
+(A)and
+(B)True
+(C)do
+(D)lambda
+标准答案：C
+第 96 题
+下列选项中，() 的布尔值不是 False。
+(A)None
+(B)0
+(C)''
+(D)1
+标准答案：D
+第 97 题
+给出如下代码: tempstr ="Hello World", 以下选项中可以输出 "World" 子串的是 ()。
+(A)print(tempstr[-5:-1])
+(B)print(tempstr[-5:0])
+(C)print(tempstr[-4:-1])
+(D)print(tempstr[-5:])
+标准答案：D
+第 98 题
+下列方法中，能够让所有单词的首字母变成大写的方法是 ()。
+(A)capitalize()
+(B)title()
+(C)upper()
+(D)ljust(0)
+标准答案：B
+第 99 题
+表达式 0 or 5 值是 ()。
+(A)0
+(B)5
+(C)True
+(D)False
+标准答案：B
+第 100 题
+当 a, b, c, d =1, 3, 5, 4 时，执行如图的程序后 x 的值为 ()。
+python
+运行
+if a<b:
+    if c<<d:
+        x=1
+    elif a<c:
+        if b<<d:
+            x=2
+        else:
+            x=3
+    else:
+        x=6
+else:
+    x=7
+(A)1
+(B)2
+(C)3
+(D)6
+标准答案：B
+第 101 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+for x in range(4):
+    print('*', end=':')
+(A)::*:
+(B)::::
+(C)****:
+(D)****:
+标准答案：B
+第 102 题
+以下输入，不能使如图的代码执行结束的是 ()。
+python
+运行
+while True:
+    inp =eval(input("请输入一个数值:"))
+    if inp //3:
+        break
+(A)5
+(B)4
+(C)3
+(D)2
+标准答案：D
+第 103 题
+执行如图的程序，输出的结果是 ()。
+python
+运行
+for i in "Nation":
+    for k in range(2):
+        if i=='n':
+            break
+        print(i, end="")
+(A)aattiioo
+(B)NNaattiioo
+(C)Naattiioon
+(D)aattiioonn
+标准答案：B
+第 104 题
+执行如图的程序，以下选项中有输出的是 ()。
+python
+运行
+import random as ran
+listV=[]
+ran.seed(100)
+for i in range(10):
+    i = ran.randint (100,999)
+    listV.append(i)
+(A)print(max(listV))
+(B)print(listV.max())
+(C)print(listV.pop(i))
+(D)print(listV.reverse(i))
+标准答案：A
+第 105 题
+对于列表 ls =[1,2,3,4,5,6,7,8,9,10], 得不到结果 [1,3,5,7,9] 的是 ()。
+(A)ls[::2]
+(B)ls[:-1:2]
+(C)ls[1:11:2]
+(D)ls[0::2]
+标准答案：C
+第 106 题
+执行如图的程序，输出的结果是 ()。
+python
+运行
+ls=['绿茶','乌龙茶','红茶','白茶','黑茶']
+x='乌龙茶'
+print(ls.index(x, 0))
+(A)-3
+(B)0
+(C)1
+(D)-4
+标准答案：C
+第 107 题
+Python 语句 print (type ([1, 2, 3, 4])) 的输出结果是 ()。
+(A)<class 'tuple'>
+(B)<class 'dict'>
+(C)<class 'set'>
+(D)<class 'list'>
+标准答案：D
+第 108 题
+己知 x=(10, 20, 30, 40, 50), 那么表达式 x [5:] 值为 ()。
+(A)()
+(B)0
+(C)50
+(D) 错误
+标准答案：A
+第 109 题
+字典对象的 () 方法返回字典中的所有 "键 - 值对"。
+(A)keys()
+(B)values()
+(C)items()
+(D)item()
+标准答案：C
+第 110 题
+表达式 {1:'a', 2:'b',3:'c'}.get (4, 'd') 的值为 ()。
+(A) 错误
+(B)'d'
+(C)None
+(D)'c'
+标准答案：B
+第 111 题
+以下选项中不属于组合数据类型的是 ()。
+(A) 变体类型
+(B) 字典类型
+(C) 映射类型
+(D) 序列类型
+标准答案：A
+第 112 题
+执行如图的程序，输出的结果不可能是 ()。
+python
+运行
+ss = set('htslbht')
+for i in ss:
+    print(i, end='')
+(A)bhtls
+(B)bhlts
+(C)tsblth
+(D)thsbl
+标准答案：C
+第 113 题
+下列有关函数的说法中，正确的是 ()。
+(A) 函数的定义必须在程序的开头
+(B) 函数定义后，其中的程序就可以自动执行
+(C) 函数定义后需要调用才会执行
+(D) 函数体与关键字 def 必须左对齐
+标准答案：C
+第 114 题
+函数如图所示：下面 () 在调用函数时会报错。
+python
+运行
+def showNnumber(numbers):
+    for n in numbers:
+        print(n)
+(A)showNnumber([1,2,3,5])
+(B)showNnumber('3.1415926')
+(C)showNnumber(3.1415926)
+(D)showNnumber(1,2,3,4)
+标准答案：C
+第 115 题
+以下代码中的 print_menu () 函数是 () 分类。
+python
+运行
+def print_menu():
+    print('-----')
+    print('xx涮涮锅 点菜系统')
+    print('1. 羊肉涮涮锅')
+    print('2.牛肉涮涮锅')
+    print('3. 猪肉涮涮锅')
+    print('-----')
+print_menu()
+(A) 无参无返回值函数
+(B) 无参有返回值函数
+(C) 有参无返回值函数
+(D) 有参有返回值函数
+标准答案：A
+第 116 题
+执行如图的代码，输出的结果是 ()。
+python
+运行
+f = lambda a="hello^", b="python^", c="world": a+b.split("o^")[1]+c
+print(f("hi"))
+(A)ballegythomworld
+(B)hipythonworld
+(C)helloworld
+(D)hinworld
+标准答案：B
+第 117 题
+己知 x=(1, 2, 3), 那么表达式 sum (x) 的值为 ()。
+(A)6
+(B) 错误
+(C)12
+(D)9
+标准答案：A
+第 118 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+d = {"大海":"蓝色", "天空":"灰色","大地":"黑色"}
+print(d["大地"], d.get("大地","黄色"))
+(A) 黑色 黄色
+(B) 黑色 黑色
+(C) 黑的 灰色
+(D) 黑色 蓝色
+标准答案：B
+第 119 题
+已知 x=tuple (range (10)), 则表达式 x [-4:] 的值为 ()。
+(A)(9, 8, 7, 6)
+(B)(5, 6, 7, 8, 9)
+(C) 错误
+(D)(6, 7, 8, 9)
+标准答案：D
+第 120 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+a = [5, 1, 3, 4]
+print(sorted(a, reverse = True))
+(A)[5, 4, 3, 1]
+(B)[4, 3, 1,5]
+(C)[1, 3, 4, 5]
+(D)[5, 1, 3, 4]
+标准答案：A
+第 121 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+ls = [3.5,"Python", [10, "LIST"], 3.6]
+print(ls[2][-1][1])
+(A)I
+(B)P
+(C)L
+(D)A
+标准答案：C
+第 122 题
+对于列表 (序列) s, 下列选项对 min (s) 描述正确的是 ()。
+(A) 一定可以返回 s 中的最小元素，如果存在多个相同的最小元素，则返回一个列表类型
+(B) 一定能够返回 s 中的最小元素
+(C) 一定可以返回 s 中的最小元素，如果存在多个相同的最小元素，则返回一个元组类型
+(D) 可以返回 s 中的最小元素，但要求 s 中元素可比较
+标准答案：D
+第 123 题
+执行如图的代码，输出的结果是 ()。
+python
+运行
+for i in range(8):
+    if i%2!=1:
+        continue
+    else:
+        print(i, end=",")
+(A)0,
+(B)1,
+(C)1,3,5,7,
+(D)0,2,4,6,
+标准答案：C
+第 124 题
+代码如图所示，执行后输出的结果是 ()。
+python
+运行
+for i in "NJIT":
+    for j in range(2):
+        print(i,end='')
+        if i=='I':
+            break
+(A)NNJ
+(B)NNJJTT
+(C)NNJJITT
+(D)NNJI
+标准答案：C
+第 125 题
+下列说法中 () 是错误的。
+(A) while 语句的循环体中可以包括 if 语句
+(B) if 语句中可以包括循环语句
+(C) 循环语句不可以嵌套
+(D) 选择语句可以嵌套
+标准答案：C
+第 126 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+x, y, z =5, -10, 2
+if x>y:
+    if y<0:
+        z=0
+    else:
+        z +=1
+print(z)
+(A)0
+(B)1
+(C)2
+(D)3
+标准答案：A
+第 127 题
+执行如图的代码，用键盘输入数字 5, 输出的结果是 ()。
+python
+运行
+n =eval(input("请输入一个整数:"))
+s=0
+if n>=5:
+    n-=1
+    s=4
+if n<5:
+    n-=1
+    s=3
+print(s)
+(A)4
+(B)3
+(C)0
+(D)2
+标准答案：B
+第 128 题
+执行如图的程序，输出结果是 ()。
+python
+运行
+print('{:*<10.4}'.format('Flower'))
+(A)Flow
+(B)Flow
+(C)Flower
+(D)Flow******
+标准答案：D
+第 129 题
+给出如下代码:
+python
+运行
+>>>x=3.14
+>>> eval('x +10')
+上述代码的输出结果是 ()。
+(A)TypeError: must be str, not int
+(B)13.14
+(C)3.141
+(D)"13.14"
+标准答案：B
+第 130 题
+下面代码的输出结果是 ()。
+python
+运行
+>>> a, b, c, d, e, f= 'Python'
+>>>b
+(A)'y'
+(B)1
+(C)0
+(D) 出错
+标准答案：A
+#### 第131题
+下列关于Python的描述,正确的是()。
+- (A)代码的缩进错误导致的是逻辑错误
+- (B)跳跃结构是Python的流程结构之一
+- (C)Python支持的数据类型包括char、int和float等
+- (D)Python内存管理中, 变量无须事先创建和赋值, 而是可以直接使用
+**标准答案**：A
+
+#### 第132题
+下列表达式中,返回True的是()。
+- (A)a=2; b=2; a=b
+- (B)3>2>1
+- (C)True and False
+- (D)2!=2
+**标准答案**：B
+
+#### 第133题
+表达式 max(-3,min([1,2,3,8,-1])) 的结果是()。
+- (A)-3
+- (B)-1
+- (C)1
+- (D)2
+**标准答案**：B
+
+#### 第134题
+以下关于random库的描述,错误的是()。
+- (A)random库是Python的第三方库
+- (B)通过 from random import *可以引入random随机库
+- (C)设定相同种子, 每次调用随机函数生成的随机数相同
+- (D)通过 import random 可以引入random随机库
+**标准答案**：A
+
+#### 第135题
+以下对Python程序设计风格描述错误的选项是()。
+- (A)Python中不允许把多条语句写在同一行
+- (B)Python中, 需要把多条语句写在同一行时,要用分号隔开
+- (C)Python语句中, 增加缩进表示语句块的开始, 减少缩进表示语句块的退出
+- (D)Python可以将一条长语句分成多行显示, 使用续航符"\"
+**标准答案**：A
+
+#### 第136题
+表达式(1:'a', 2:'b',3:'c').get(4, 'd') 的值为()。
+- (A)错误
+- (B)'d'
+- (C)None
+- (D)'c'
+**标准答案**：B
+
+#### 第137题
+字典对象的()方法返回字典中的所有"键-值对"。
+- (A)keys()
+- (B)values()
+- (C)items()
+- (D)item()
+**标准答案**：C
+
+#### 第138题
+己知x=(10, 20, 30, 40, 50), 那么表达式 x[5:] 值为()。
+- (A)()
+- (B)0
+- (C)50
+- (D)错误
+**标准答案**：A
+
+#### 第139题
+Python语句 print(type([1, 2, 3, 4])) 的输出结果是()。
+- (A)<class 'tuple'>
+- (B)<class 'dict'>
+- (C)<class 'set'>
+- (D)<class 'list'>
+**标准答案**：D
+
+#### 第140题
+执行如图的程序,输出的结果是()。
+```python
+ls=['绿茶','乌龙茶','红茶','白茶','黑茶']
+x='乌龙茶'
+print(ls.index(x, 0))
+```
+- (A)-3
+- (B)0
+- (C)1
+- (D)-4
+**标准答案**：C
+
+#### 第141题
+对于列表ls =[1,2,3,4,5,6,7,8,9,10],得不到结果[1,3,5,7,9] 的是()。
+- (A)ls[:2]
+- (B)ls[:-1:2]
+- (C)ls[1:11:2]
+- (D)ls[0:2]
+**标准答案**：C
+
+#### 第142题
+执行如图的程序,以下选项中有输出的是()。
+```python
+import random as ran
+listV=[]
+ran.seed(100)
+for i in range(10):
+    i = ran.randint (100,999)
+    listV.append(i)
+```
+- (A)print(max(listV))
+- (B)print(listV.max())
+- (C)print(listV.pop(i))
+- (D)print(listV.reverse(i))
+**标准答案**：A
+
+#### 第143题
+执行如图的程序, 输出的结果是()。
+```python
+for i in "Nation":
+    for k in range(2):
+        if i=='n':
+            break
+        print(i, end="")
+```
+- (A)aattiioo
+- (B)NNaattiioo
+- (C)Naattiioon
+- (D)aattiioonn
+**标准答案**：B
+
+#### 第144题
+以下输入,不能使如图的代码执行结束的是()。
+```python
+while True:
+    inp =eval(input("请输入一个数值:"))
+    if inp //3:
+        break
+```
+- (A)5
+- (B)4
+- (C)3
+- (D)2
+**标准答案**：D
+
+#### 第145题
+执行如图的程序, 输出结果是()。
+```python
+for x in range(4):
+    print('*', end=':')
+```
+- (A)*:*:*:
+- (B)*:*:*:*:
+- (C)****:
+- (D)****:
+**标准答案**：B
+
+#### 第146题
+当 a, b, c, d =1, 3, 5, 4时, 执行如图的程序后x的值为()。
+```python
+if a<b:
+    if c<<d:
+        x=1
+    elif a<c:
+        if b<<d:
+            x=2
+        else:
+            x=3
+    else:
+        x=6
+else:
+    x=7
+```
+- (A)1
+- (B)2
+- (C)3
+- (D)6
+**标准答案**：B
+
+#### 第147题
+表达式 0 or 5值是()。
+- (A)0
+- (B)5
+- (C)True
+- (D)False
+**标准答案**：B
+
+#### 第148题
+下列方法中,能够让所有单词的首字母变成大写的方法是()。
+- (A)capitalize()
+- (B)title()
+- (C)upper()
+- (D)ljust(0)
+**标准答案**：B
+
+#### 第149题
+给出如下代码: tempstr ="Hello World", 以下选项中可以输出"World"子串的是()。
+- (A)print(tempstr[-5:-1])
+- (B)print(tempstr[-5:0])
+- (C)print(tempstr[-4:-1])
+- (D)print(tempstr[-5:])
+**标准答案**：D
+
+#### 第150题
+下列选项中,()的布尔值不是 False。
+- (A)None
+- (B)0
+- (C)''
+- (D)1
+**标准答案**：D
